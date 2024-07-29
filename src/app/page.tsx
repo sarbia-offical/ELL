@@ -4,14 +4,51 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-07-30 00:37:15
+ * @LastEditTime: 2024-07-30 01:22:40
  */
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import { useEffect, useState } from "react";
+const $ = require('jquery');
 export default function Home() {
+  const [partOfSpeechList, setPartOfSpeechList] = useState<Array<{label: string, info: string}>>([
+    { label: 'Noun', info: '(n.) - 名词' },
+    { label: 'Pronoun', info: '(pron.) - 代词' },
+    { label: 'Verb', info: '(v.) - 动词' },
+    { label: 'transitive verb', info: '(vt.) - 及物动词' },
+    { label: 'intransitive verb', info: '(vi.) - 不及物动词' },
+    { label: 'Adjective', info: '(adj.) - 形容词' },
+    { label: 'Adverb', info: '(adv.) - 副词' },
+    { label: 'Preposition', info: '(prep.) - 介词' },
+    { label: 'Conjunction', info: '(conj.) - 连词' },
+    { label: 'Interjection', info: '(interj.) - 感叹词' },
+    { label: 'Article', info: '(art.) -冠词' },
+    { label: 'determiner', info: '(det.) - 限定词' },
+    { label: 'Auxiliary Verb', info: '(aux.) - 助动词' },
+    { label: 'Modal Verb', info: '(modal.) - 情态动词' },
+    { label: 'Gerund', info: '(ger.) - 动名词' },
+    { label: 'Participle', info: '(part.) - 分词' },
+    { label: 'Infinitive', info: '(inf.) - 不定式' }
+  ]);
+  const handleClick = () => {
+    const $partOfSpeechDOM =$('.page_partOfSpeech__nzTPw');
+    $partOfSpeechDOM.slideToggle();
+  }
   return (
     <main className={styles.main}>
+      <button onClick={ handleClick }>展开/收起单词词性表</button>
+      <div className={styles.partOfSpeech}>
+        {
+          partOfSpeechList.map((ele, index: number) => {
+            return (
+              <div key={index} className={styles.speechItem}>
+                { ele.label }<b>{ ele.info }</b>
+              </div>
+            )
+          })
+        }
+      </div>
       <table className={styles.table}>
         <thead>
           <tr>
