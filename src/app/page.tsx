@@ -4,51 +4,14 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-07-31 00:26:42
+ * @LastEditTime: 2024-08-02 01:04:05
  */
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import React, { useEffect, useState } from "react";
+import { RenderWordComponent, RenderExtraComponent,  IExtraInfo } from "./components/index"
 const $ = require("jquery");
-interface IPhraseItem {
-  originText: string;
-  translate: string;
-}
-interface IExtraInfo {
-  wordComponent: React.ReactNode;
-  phraseList: Array<IPhraseItem>;
-}
-
-const RenderWordComponent = (
-  word: string,
-  phoneticSymbol: string,
-  translate: string | React.ReactNode
-) => {
-  return (
-    <>
-      <div>{word}</div>
-      <div>{phoneticSymbol}</div>
-      <div>{translate}</div>
-    </>
-  );
-};
-const RenderExtraComponent = (list: Array<IExtraInfo>) =>
-  list.map((item: IExtraInfo, index: number) => (
-    <tr key={index}>
-      <td>{item.wordComponent}</td>
-      <td>
-        {item.phraseList.map((item2: IPhraseItem, index2: number) => {
-          return (
-            <div key={index2}>
-              <div>{item2.originText}</div>
-              <div>{item2.translate}</div>
-            </div>
-          );
-        })}
-      </td>
-    </tr>
-  ));
 
 export default function Home() {
   const [partOfSpeechList, setPartOfSpeechList] = useState<
@@ -307,6 +270,93 @@ export default function Home() {
     },
   ]);
 
+  const [firstLessonSwaggy, setFirstLessonSwaggy] = useState<Array<IExtraInfo>>([
+    {
+      wordComponent: RenderWordComponent('be straight with', '' , '坦白/实话实说'),
+      phraseList: [
+        {
+          originText: 'I respect your honesty, so i’ll just be straight with you',
+          translate: '我欣赏你的诚实，那我就实话和你说了'
+        },
+        {
+          originText: 'He is straight',
+          translate: 'straight也有直男直女的意思'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('Apartment', '[əˈpɑːtmənt]' , 'n. 公寓'),
+      phraseList: [
+        {
+          originText: 'We rented an apartment',
+          translate: '我们租了一套公寓'
+        },
+        {
+          originText: 'You got it a ready?, Is it big enough?',
+          translate: '你已经准备好了？他够大吗？'
+        },
+        {
+          originText: 'This is your apartment, Peter',
+          translate: '这是你的公寓，彼得'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('Even if', '' , '就算，即使'),
+      phraseList: [
+        {
+          originText: 'Even if you have a dark skin, you still need sunblock',
+          translate: '就算你皮肤黑，那也仍然需要防晒霜'
+        },
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('property', '[ˈprɒpəti] ' , '房产/财产'),
+      phraseList: [
+        {
+          originText: 'The bought a piece of property by the lake',
+          translate: '他们在湖边买了一处房产（by the lake 在湖边）'
+        },
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('ownership', '[ˈəʊnəʃɪp] ' , '所有权'),
+      phraseList: [
+        {
+          originText: 'Who has the ownership of this house?',
+          translate: '谁有这所房子的所有权？'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('certificate', ' [səˈtɪfɪkət]', '证书'),
+      phraseList: [
+        {
+          originText: 'High-level certificate',
+          translate: '高级证书'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('property ownership certificate', '', '房产证'),
+      phraseList: [
+        {
+          originText: 'I had property ownership certificate before ten years ago',
+          translate: '十年前我就有房产证了'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent('necessarily ', 'Necessarily', 'adv .必要的 必然的'),
+      phraseList: [
+        {
+          originText: 'He way lying, of course. Not necessarily',
+          translate: '他肯定在说谎。不一定'
+        }
+      ]
+    }
+  ])
+
   const handleClick = () => {
     const $partOfSpeechDOM = $(".page_partOfSpeech__nzTPw");
     $partOfSpeechDOM.slideToggle();
@@ -341,6 +391,42 @@ export default function Home() {
         </thead>
         <tbody>{RenderExtraComponent(secondLessonExtraInfo)}</tbody>
       </table>
+
+      <div className={styles.scene}>
+        <p className={styles.swaggyEnglish}>Swaggy English</p>
+        <p>
+          En heh,<span style={{"color": "red"}}> I’ll just be straight with you</span>, we have not bought a <span style={{"color": "red"}}>apartment</span> yet, <span>Even if</span> we did, 
+          we don’t put your name into the <span style={{"color": "red"}}>property ownership certificate anyway.</span>
+          it’s ok, we don’t <span style={{"color": "red"}}>necessarily</span> to buy one, renting ones would be fine.
+          cars will be cheaper in the next few years, so we do not intend to buy one either.
+          will, public transportation is way more convenient and eco-friendly anyway.
+        </p>
+      </div>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>First lesson swaggy</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(firstLessonSwaggy)}</tbody>
+      </table>
+
+      <div className={styles.scene}>
+        <p className={styles.swaggyEnglish}>Proverb</p>
+        <p>
+          The best time to plant a tree was teen years ago, the second time is today
+        </p>
+        <p>
+          种一棵树最好的时间是十年前，其次是现在
+        </p>
+        <p>
+          We choose to go to the moon in this decade and do other things, not because they are easy, but because they are hard.
+        </p>
+        <p>
+          我们选择在这一年代登月，并做其他事情，不是因为它们简单，而是因为它们困难
+        </p>
+      </div>
     </main>
   );
 }

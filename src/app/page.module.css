@@ -19,3 +19,9 @@
   margin-bottom: 5px;
   cursor: pointer;
 }
+.scene{
+  text-align: center;
+  .swaggyEnglish{
+    font-size: 20px;
+  }
+}
