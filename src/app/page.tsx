@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-02 01:04:05
+ * @LastEditTime: 2024-08-04 01:09:26
  */
 "use client";
 import Image from "next/image";
@@ -270,6 +270,229 @@ export default function Home() {
     },
   ]);
 
+  const [thirdLessonExtraInfo, setThirdLessonExtraInfo] = useState<
+    Array<IExtraInfo>
+  >([
+    {
+      wordComponent: RenderWordComponent(
+        "fat",
+        "[fæt]",
+        <>
+          {"adj. 肥胖"}
+        </>),
+        phraseList: [
+          {
+            originText: 'This cat is very fat',
+            translate: '这只猫很肥'
+          },
+          {
+            originText: 'Eating to much junk foot can make you fat',
+            translate: '吃太多垃圾食品会让你变胖'
+          }
+        ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "apple",
+        "['æpl]",
+        <>
+          {"n. 苹果"}
+        </>),
+        phraseList: [
+          {
+            originText: "You are the apple of my eyes",
+            translate: "你是我最珍重的人"
+          },
+          {
+            originText: "An apple a day, the doctor away",
+            translate: "一天一个苹果，医生远离我"
+          }
+        ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "tanned",
+        "[tænd]",
+        <>
+          {"adj. 晒黑的"}
+        </>),
+        phraseList: [
+          {
+            originText: "Get tanned",
+            translate: "美黑"
+          },
+          {
+            originText: "Tanning Machine",
+            translate: "美黑机"
+          },
+          {
+            originText: "The darker the sexier",
+            translate: "越黑越性感"
+          }
+        ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "stand",
+        "/stænd/",
+        <>
+          {"n. 立场/态度/观点"}
+          <br/>
+          {"v. 站立/直立/忍受"}
+        </>),
+        phraseList: [
+          {
+            originText: "stand by",
+            translate: "袖手旁观/随时待命"
+          },
+          {
+            originText: "How can you stand by",
+            translate: "你怎么能袖手旁观呢"
+          },
+          {
+            originText: "stand for",
+            translate: "代表/象征"
+          },
+          {
+            originText: "What dose the 'S' stand for? stupid!",
+            translate: "这个‘S’代表什么？代表傻逼！"
+          },
+          {
+            originText: "What dose that stand for?",
+            translate: "那个代表什么意思？"
+          },
+          {
+            originText: "Stand somebody up",
+            translate: "放某人鸽子/失约"
+          },
+          {
+            originText: "Don't stand me up!",
+            translate: "别放我鸽子！"
+          }
+        ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Stand In",
+        "/stænd/ [ɪn]",
+        <>
+          {'阻碍/代表'}
+        </>
+      ),
+      phraseList: [
+        {
+          originText: "I'll not stand in his way",
+          translate: "我不会阻碍"
+        },
+        {
+          originText: "He has ambitions for the throne, but his brother's four children stand in his way",
+          translate: "他有争夺王位的野心，但是他的四个兄弟的孩子阻碍了他"
+        },
+        {
+          originText: "If a bloke want to commit suicide, Who am i to stand in his way",
+          translate: "如果一个小伙想要自杀，我有什么资格阻拦他呢"
+        },
+        {
+          originText: "I don't want to commit suicide, I just want someone can help me ",
+          translate: "我不想自杀，我只是想要一个人可以帮帮我"
+        },
+        {
+          originText: "And i promise, If he's gay, I won't stand in his way",
+          translate: "我保证，如果他是同性恋，我不会阻碍他的"
+        },
+        {
+          originText: "I understand and i support his choices. And I promise If he's gay, i won’t stand in his way",
+          translate: "我理解并且支持他的选择，如果他是gay。 而且我保证，如果他是同性恋，我是不会阻碍他的"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "stand to",
+        "/stænd tə/",
+        <>
+          {"坚守"}
+        </>),
+      phraseList: [
+        {
+          originText: "Stand to your post, soldier!",
+          translate: "坚守你的岗位，士兵！"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "stand up for",
+        "/stænd ʌp fɔr/",
+        <>
+          {"为...辩护/支持"}
+        </>),
+        phraseList: [
+          {
+            originText: "Stand up for yourself",
+            translate: "为你自己/捍卫你自己的尊严"
+          },
+          {
+            originText: "Stand up for what you believe in, Even if it means standing alone.",
+            translate: "为你所相信的东西站出来，即使这意味着你要孤身一人。"
+          }
+        ]
+    }
+  ])
+
+  const [fifthLessonExtraInfo, setFifthLessonExtraInfo] = useState<
+    Array<IExtraInfo>
+  >([
+    {
+      wordComponent: RenderWordComponent(
+        "bed",
+        "[bed]",
+        <>
+          {"n. 床"}
+          <br/>
+          {"v. 把…固定在；与（某人）发生性关系"}
+        </>),
+      phraseList: [
+        {
+          originText: "You are bedding with your enemy",
+          translate: "你在与敌同眠"
+        },
+        {
+          originText: "Sorry, the bed's full",
+          translate: "对不起，床已经满了"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Bless",
+        "/bles/",
+        <>
+          {"v. 祝福; 保佑"}
+        </>),
+      phraseList: [
+        {
+          originText: "God bless you",
+          translate: "上帝保佑你"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Ready",
+        "/redi/",
+        <>
+          {"adj. 准备好的"}
+        </>),
+      phraseList: [
+        {
+          originText: "I’ so ready for the football season",
+          translate: "我已经为足球赛季做好了准备"
+        }
+      ]
+    }
+  ])
+
   const [firstLessonSwaggy, setFirstLessonSwaggy] = useState<Array<IExtraInfo>>([
     {
       wordComponent: RenderWordComponent('be straight with', '' , '坦白/实话实说'),
@@ -393,7 +616,7 @@ export default function Home() {
       </table>
 
       <div className={styles.scene}>
-        <p className={styles.swaggyEnglish}>Swaggy English</p>
+        <p className={styles.swaggyEnglish}>Swaggy English（Lesson one）</p>
         <p>
           En heh,<span style={{"color": "red"}}> I’ll just be straight with you</span>, we have not bought a <span style={{"color": "red"}}>apartment</span> yet, <span>Even if</span> we did, 
           we don’t put your name into the <span style={{"color": "red"}}>property ownership certificate anyway.</span>
@@ -412,6 +635,24 @@ export default function Home() {
         <tbody>{RenderExtraComponent(firstLessonSwaggy)}</tbody>
       </table>
 
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>[æ]</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(thirdLessonExtraInfo)}</tbody>
+      </table>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>[e]</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(fifthLessonExtraInfo)}</tbody>
+      </table>
+      
       <div className={styles.scene}>
         <p className={styles.swaggyEnglish}>Proverb</p>
         <p>
@@ -425,6 +666,18 @@ export default function Home() {
         </p>
         <p>
           我们选择在这一年代登月，并做其他事情，不是因为它们简单，而是因为它们困难
+        </p>
+        <p>
+          If you are good for something, never do if for free
+        </p>
+        <p>
+          如果你很擅长某事，永远不要免费做
+        </p>
+        <p>
+          I do the best i can with what i have
+        </p>
+        <p>
+          我尽我所能，用我所拥有的
         </p>
       </div>
     </main>
