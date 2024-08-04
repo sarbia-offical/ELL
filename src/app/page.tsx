@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-04 01:09:26
+ * @LastEditTime: 2024-08-05 00:50:50
  */
 "use client";
 import Image from "next/image";
@@ -490,6 +490,134 @@ export default function Home() {
           translate: "我已经为足球赛季做好了准备"
         }
       ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set",
+        "[set]",
+        <>
+          {"vt. 放置"}
+          <br/>
+          {"n. 一套"}
+          <br/>
+          {"a. 固定的"}
+        </>),
+      phraseList: [
+        {
+          originText: "She set the table for dinner",
+          translate: "她摆好了桌子，准备吃晚饭"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set out",
+        "/sɛt aʊt/",
+        <>
+          {"n. 出发/陈列/摆出来"}
+        </>),
+      phraseList: [
+        {
+          originText: "We are about to set out",
+          translate: "我们即将出发"
+        },
+        {
+          originText: "We are ready to set out",
+          translate: "我们准备好出发了"
+        },
+        {
+          originText: "We are about to",
+          translate: "我们即将（表示某件事即将发生）"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set on fire",
+        "/sɛt ɑn faɪər/",
+        <>
+          {"na. 放火/点燃"}
+        </>),
+      phraseList: [
+        {
+          originText: "You set the building on fire",
+          translate: "你把这栋大楼点燃了"
+        },
+        {
+          originText: "You set her heart on fire",
+          translate: "你点燃了她的心/你让她心潮澎湃"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set up",
+        "/sɛt ʌp/",
+        <>
+          {"na. 创建/安排/陷害"}
+        </>),
+      phraseList: [
+        {
+          originText: "Please set up a meeting before three'o clock with the guest",
+          translate: "请在三点前和客人安排一次会议"
+        },
+        {
+          originText: "They set me up in this apartment",
+          translate: "他们给我安排了这间公寓"
+        },
+        {
+          originText: "They set me up in this apartment by planting illegal item",
+          translate: "他们在这间公寓里通过放置违法物品陷害了我"
+        },
+        {
+          originText: "Establish a set of rules",
+          translate: "建立一套标准"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set back",
+        "/sɛt bæk/",
+        <>
+          {"na. 延迟/阻碍/倒退"}
+        </>),
+      phraseList: [
+        {
+          originText: "You set us back many months",
+          translate: "你让我们的进度延迟了好几个月"
+        },
+        {
+          originText: "It's just a minor set-back",
+          translate: "这只是一个小阻碍"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Set free",
+        "/sɛt friː/",
+        <>
+          {"na. 释放"}
+        </>),
+        phraseList: [
+          {
+            originText: "Set me free",
+            translate: "放我自由"
+          },
+          {
+            originText: "set free your potential",
+            translate: "释放你的潜能"
+          },
+          {
+            originText: "The are looking for potential buyers for the new Production",
+            translate: "他们在寻找新产品的潜在买家"
+          },
+          {
+            originText: "The bird set free from cage",
+            translate: "鸟儿从笼子里面被放飞了"
+          }
+        ]
     }
   ])
 
@@ -504,6 +632,10 @@ export default function Home() {
         {
           originText: 'He is straight',
           translate: 'straight也有直男直女的意思'
+        },
+        {
+          originText: "let me get this straight",
+          translate: "让我搞明白这件事"
         }
       ]
     },
@@ -580,6 +712,131 @@ export default function Home() {
     }
   ])
 
+  const [secondLessonSwaggy, setSecondLessonSwaggy] = useState<Array<IExtraInfo>>([
+    {
+      wordComponent: RenderWordComponent(
+        "vacation",
+        "/və'keɪʃn/",
+        <>
+          {"n. 休假/度假"}
+        </>),
+      phraseList: [
+        {
+          originText: "They planed a late summary vacation in Europe",
+          translate: "他们计划了一个夏末在欧洲的休假"
+        },
+        {
+          originText: "enjoy your vacation",
+          translate: "享受你的假期/祝你假期愉快"
+        },
+        {
+          originText: "Daddy, I’m so boring, Me to, This is why I shouldn't come into work between vacations",
+          translate: "爸爸，我好无聊，我也是，所以我不该在假期之间来工作"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "puppy",
+        "/'pʌpɪ/",
+        <>
+          {"n. 幼犬/小狗"}
+        </>),
+      phraseList: [
+        {
+          originText: "My mother gave me a puppy",
+          translate: "我妈妈送了我一条小狗"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "finally",
+        " [ˈfaɪn(ə)li]",
+        <>
+          {"终于/可以理解为盼星星盼月亮"}
+        </>),
+      phraseList: [
+        {
+          originText: "You finally came back",
+          translate: "你终于回来了"
+        },
+        {
+          originText: "After searching months, We finally to found this old certification",
+          translate: "搜索了几个月，我们终于找到了这张旧证书"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "missed",
+        "",
+        <>
+          {"v. 想念/错过"}
+        </>),
+        phraseList: [
+          {
+            originText: "We missed you so much",
+            translate: "我们非常想念你"
+          },
+          {
+            originText: "I missed the bus this morning",
+            translate: "我今早错过了公交车"
+          }
+        ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Where did you get...",
+        "",
+        <>{"你从哪弄来的..."}</>),
+      phraseList: [
+        {
+          originText: "Where did you get the dog?",
+          translate: "你从哪弄来的狗？"
+        },
+        {
+          originText: "Where did you get that money?",
+          translate: "你从哪弄来的钱？"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Get rid of",
+        "",
+        <>{"拜托/去除"}</>),
+      phraseList: [
+        {
+          originText: "Get rid of now",
+          translate: "立即处理掉"
+        },
+        {
+          originText: "They trying to get rid of his unnecessary expenses",
+          translate: "他正在试图去除不必要的开支"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Be allowed to",
+        "",
+        <>
+          {"被允许"}
+        </>),
+      phraseList: [
+        {
+          originText: "Please leave the dog outside, You are not allowed to step into this room with that dog",
+          translate: "请把那条狗留在外面，你不能带那条狗进这个房间"
+        },
+        {
+          originText: "They are allowed to buy that expensive necklace",
+          translate: "他们被允许买那条昂贵的项链"
+        }
+      ]
+    }
+  ])
+
   const handleClick = () => {
     const $partOfSpeechDOM = $(".page_partOfSpeech__nzTPw");
     $partOfSpeechDOM.slideToggle();
@@ -616,7 +873,7 @@ export default function Home() {
       </table>
 
       <div className={styles.scene}>
-        <p className={styles.swaggyEnglish}>Swaggy English（Lesson one）</p>
+        <p className={styles.swaggyEnglish}>Swaggy English(Lesson one)</p>
         <p>
           En heh,<span style={{"color": "red"}}> I’ll just be straight with you</span>, we have not bought a <span style={{"color": "red"}}>apartment</span> yet, <span>Even if</span> we did, 
           we don’t put your name into the <span style={{"color": "red"}}>property ownership certificate anyway.</span>
@@ -629,7 +886,7 @@ export default function Home() {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th colSpan={2}>First lesson swaggy</th>
+            <th colSpan={2}>Lesson one swaggy</th>
           </tr>
         </thead>
         <tbody>{RenderExtraComponent(firstLessonSwaggy)}</tbody>
@@ -651,6 +908,27 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>{RenderExtraComponent(fifthLessonExtraInfo)}</tbody>
+      </table>
+      
+      <div className={styles.scene}>
+        <p className={styles.swaggyEnglish}>Swaggy English(Lesson two)</p>
+        <p>
+          Today is the first day of my <span style={{"color": "red"}}>vacation</span>, I’m going to take my <span style={{"color": "red"}}>puppy</span> home.
+          MoM, dad!
+          On! sweet heart, you <span style={{"color": "red"}}>finally</span> came back, we <span style={{"color": "red"}}>missed</span> you so much!
+          What! <span style={{"color": "red"}}>where did you get the dog?</span>
+          <span style={{"color": "red"}}>Get rid of</span> now!
+          You <span style={{"color": "red"}}>are not allowed to</span> step into this room with that dog!
+        </p>
+      </div>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>Lesson two swaggy</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(secondLessonSwaggy)}</tbody>
       </table>
       
       <div className={styles.scene}>
