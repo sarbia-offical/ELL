@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-05 00:50:50
+ * @LastEditTime: 2024-08-06 00:27:10
  */
 "use client";
 import Image from "next/image";
@@ -440,7 +440,7 @@ export default function Home() {
     }
   ])
 
-  const [fifthLessonExtraInfo, setFifthLessonExtraInfo] = useState<
+  const [fourthLessonExtraInfo, setFourthLessonExtraInfo] = useState<
     Array<IExtraInfo>
   >([
     {
@@ -621,6 +621,131 @@ export default function Home() {
     }
   ])
 
+  const [fifthLessonExtraInfo, setFifthLessonExtraInfo] = useState<
+    Array<IExtraInfo>
+  >([{
+    wordComponent: RenderWordComponent(
+      "Father",
+      "/ˈfɑ:ðə(r)/",
+      <>
+        {"n. 父亲/爸爸/天父"}
+        <br/>
+        {"v. 成为父亲/做父亲"}
+      </>),
+    phraseList: [
+      {
+        originText: "My father works hard to support our family",
+        translate: "我的父亲努力工作用以维持我们的家庭"
+      },
+      {
+        originText: "He look up to his father as a role model",
+        translate: "他把他的父亲当成榜样"
+      },
+      {
+        originText: "look up to",
+        translate: "仰望..."
+      },
+      {
+        originText: "She called her father to ask for how to ride a bike",
+        translate: "她打电话给她父亲问他如何骑单车"
+      }
+    ]
+  },
+  {
+    wordComponent: RenderWordComponent(
+      "hard",
+      "/ha：(r)d/",
+      <>
+        {"adv. 努力的/艰难的"}
+        <br/>
+        {"adj. 坚固的/"}
+      </>),
+      phraseList: [
+        {
+          originText: "The wall is so hard, I can't to broke it with my hands",
+          translate: "这墙十分坚硬，我没法用手将它打破"
+        },
+        {
+          originText: "Staying alive is very hard",
+          translate: "活着很困难"
+        },
+        {
+          originText: "Learn a new Language can be very hard",
+          translate: "学习一门语言可能是非常困难的"
+        }
+      ]
+  },
+  {
+    wordComponent: RenderWordComponent(
+      "sharp",
+      "[ʃɑːrp]",
+      <>
+        {"adj. 锋利的/尖的"}
+      </>
+    ),
+    phraseList: [
+      {
+        originText: "Be careful of the knife, it's very sharp",
+        translate: "小心刀子，这很锋利"
+      },
+      {
+        originText: "The meeting started at eight'o clock sharp",
+        translate: "会议八点整开始"
+      }
+    ]
+  },
+  {
+    wordComponent: RenderWordComponent(
+      "start",
+      "/ stɑːt/",
+      <>
+        {"vt. 开始/启动"}
+        <br/>
+        {"vi. 出发"}
+        <br/>
+        {"n. 开始;起点"}
+      </>),
+    phraseList: [
+      {
+        originText: "Head start",
+        translate: "领先"
+      },
+      {
+        originText: "We have three-minute head start",
+        translate: "我们有三分钟的领先"
+      },
+      {
+        originText: "start over",
+        translate: "重新开始"
+      },
+      {
+        originText: "Let's start our relationship over",
+        translate: "重新开始我们的关系"
+      },
+      {
+        originText: "Fresh start",
+        translate: "崭新的开始"
+      },
+      {
+        originText: "new week, fresh start",
+        translate: "新的一周，新的开始"
+      },
+      {
+        originText: "start out/off",
+        translate: "开始"
+      },
+      {
+        originText: "We all start out equal",
+        translate: "我们生来平等"
+      },
+      {
+        originText: "We will start out slow",
+        translate: "我们会慢慢开始"
+      }
+    ]
+  }
+  ]);
+
   const [firstLessonSwaggy, setFirstLessonSwaggy] = useState<Array<IExtraInfo>>([
     {
       wordComponent: RenderWordComponent('be straight with', '' , '坦白/实话实说'),
@@ -702,11 +827,28 @@ export default function Home() {
       ]
     },
     {
-      wordComponent: RenderWordComponent('necessarily ', 'Necessarily', 'adv .必要的 必然的'),
+      wordComponent: RenderWordComponent('necessarily ', '[ˌnesəˈserəli]', 'adv .必要的 必然的'),
       phraseList: [
         {
           originText: 'He way lying, of course. Not necessarily',
           translate: '他肯定在说谎。不一定'
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent("necessary", "[ˈnesəˌseri]", <>
+        {"n.必需品"}
+        <br/>
+        {"adj. 必须的/必要的"}
+      </>),
+      phraseList: [
+        {
+          originText: "This banana is necessary for the monkey",
+          translate: "这根香蕉对猴子来说是不必要的"
+        },
+        {
+          originText: "this property ownership certificate is necessary for me",
+          translate: "这个房产证对我来说是必须的"
         }
       ]
     }
@@ -907,7 +1049,7 @@ export default function Home() {
             <th colSpan={2}>[e]</th>
           </tr>
         </thead>
-        <tbody>{RenderExtraComponent(fifthLessonExtraInfo)}</tbody>
+        <tbody>{RenderExtraComponent(fourthLessonExtraInfo)}</tbody>
       </table>
       
       <div className={styles.scene}>
@@ -929,6 +1071,15 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>{RenderExtraComponent(secondLessonSwaggy)}</tbody>
+      </table>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>[a:]</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(fifthLessonExtraInfo)}</tbody>
       </table>
       
       <div className={styles.scene}>
