@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-06 00:27:10
+ * @LastEditTime: 2024-08-07 00:22:08
  */
 "use client";
 import Image from "next/image";
@@ -610,7 +610,7 @@ export default function Home() {
             translate: "释放你的潜能"
           },
           {
-            originText: "The are looking for potential buyers for the new Production",
+            originText: "The are looking for potential buyers for the new product",
             translate: "他们在寻找新产品的潜在买家"
           },
           {
@@ -745,6 +745,145 @@ export default function Home() {
     ]
   }
   ]);
+
+  const [sixthLessonExtraInfo, setSixthLessonExtraInfo] = useState<
+    Array<IExtraInfo>
+  >([
+    {
+    wordComponent: RenderWordComponent(
+      "love",
+      "/lʌv/",
+      <>
+        {"n. 爱/爱情"}
+        <br/>
+        {"v. 爱/喜欢"}
+      </>),
+    phraseList: [
+      {
+        originText: "I love you",
+        translate: "我爱你"
+      },
+      {
+        originText: "He loves classical music, especially Bach",
+        translate: "他热爱古典音乐，尤其是巴赫"
+      },
+      {
+        originText: "They love each other very much",
+        translate: "他们非常相爱"
+      },
+      {
+        originText: "She loves paint in her free time",
+        translate: "她喜欢在空余时间画画"
+      },
+      {
+        originText: "I love you more than cupcakes",
+        translate: "我爱你胜过纸杯蛋糕"
+      },
+      {
+        originText: "Do you know how much i love you? I love you more than heaven, more than the stars. Even a one thousand red roes cannot compare to your beauty",
+        translate: "你知道我有多爱你吗，我爱你胜过天堂，胜过星星，即使是一千多红玫瑰也无法和你的美丽相比"
+      },
+      {
+        originText: "Your beauty is greater than a thousand red rose",
+        translate: "你的美丽胜过一千多玫瑰（greater是great的比较级，意思为更大，常用于两者之间的比较，一个比另一个更大或者其他）"
+      }
+    ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "cup",
+        "/kʌp/",
+        <>
+          {"n. 杯子/一杯"}
+          <br/>
+          {"v. 使手窝成杯状"}
+        </>),
+      phraseList: [
+        {
+          originText: "A cup of coffee",
+          translate: "一杯咖啡"
+        },
+        {
+          originText: "A cup of coffee in the morning helps me wake up",
+          translate: "一杯咖啡有助于我早上起来"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "up",
+        "/ʌp/",
+        <>
+          {"adv. 起床/向上/出现"}
+          <br/>
+          {"adj. 向上的/往上移动的"}
+          <br/>
+          {"n. 上面/高处"}
+        </>),
+      phraseList: [
+        {
+          originText: "Drink up",
+          translate: "干杯/喝完"
+        },
+        {
+          originText: "Drink up you beer",
+          translate: "喝完你的啤酒"
+        },
+        {
+          originText: "Eat up",
+          translate: "吃完"
+        },
+        {
+          originText: "Eat up your dinner quickly",
+          translate: "快速吃完你的午餐"
+        },
+        {
+          originText: "Shut up!",
+          translate: "闭嘴!"
+        },
+        {
+          originText: "I will shut him up",
+          translate: "我会让他闭嘴的（干掉 冷酷~）"
+        },
+        {
+          originText: "Put up",
+          translate: "搭建/张贴/设立"
+        },
+        {
+          originText: "You can put up the reward poster",
+          translate: "你可以张贴悬赏海报了"
+        },
+        {
+          originText: "They put up a fence",
+          translate: "他们设立了一个障碍"
+        },
+        {
+          originText: "Cheer up",
+          translate: "振作"
+        },
+        {
+          originText: "Winning to cheer the team up",
+          translate: "胜利可以让你的团队振作起来"
+        },
+        {
+          originText: "Hurry up",
+          translate: "快点"
+        },
+        {
+          originText: "Hurry up！I will be late for the meeting",
+          translate: "快点！我会议要迟到了"
+        },
+        {
+          originText: "what's up",
+          translate: "打招呼（怎么样）"
+        },
+        {
+          originText: "What's up with the project? how's it going",
+          translate: "新项目怎么样了，进展如何"
+        }
+      ]
+    }
+])
 
   const [firstLessonSwaggy, setFirstLessonSwaggy] = useState<Array<IExtraInfo>>([
     {
@@ -1080,6 +1219,15 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>{RenderExtraComponent(fifthLessonExtraInfo)}</tbody>
+      </table>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>[ʌ]</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(sixthLessonExtraInfo)}</tbody>
       </table>
       
       <div className={styles.scene}>
