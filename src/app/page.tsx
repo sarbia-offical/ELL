@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-07 00:22:08
+ * @LastEditTime: 2024-08-08 23:50:03
  */
 "use client";
 import Image from "next/image";
@@ -1118,6 +1118,49 @@ export default function Home() {
     }
   ])
 
+  const [thirdLessonSwaggy, setThirdLessonSwaggy] = useState<Array<IExtraInfo>>([
+    {
+      wordComponent: RenderWordComponent(
+        "You know what?",
+        "",
+        <>
+          {"你知道吗？"}
+        </>),
+      phraseList: [
+        {
+          originText: "You know what? she is married",
+          translate: "你知道吗，她结婚了"
+        },
+        {
+          originText: "You know what, I think we should take a vacation next month",
+          translate: "你知道吗，我觉得我们应该下个月去度假"
+        },
+        {
+          originText: "You know what, I have changed my mind about this meeting",
+          translate: "你知道吗，我改变了对这个会议的想法"
+        },
+        {
+          originText: "You know what, I think i need some help with this illegal item",
+          translate: "你知道吗，我觉得我需要一些帮助来处理这些违禁品"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "Word on the street",
+        "",
+        <>
+          {"坊间谣言/据说"}
+        </>),
+      phraseList: [
+        {
+          originText: "Word on the street is that, Trump is not going to be the next president",
+          translate: "据说，特朗普不会成为下一届美国总统"
+        }
+      ]
+    }
+  ])
+
   const handleClick = () => {
     const $partOfSpeechDOM = $(".page_partOfSpeech__nzTPw");
     $partOfSpeechDOM.slideToggle();
@@ -1229,6 +1272,26 @@ export default function Home() {
         </thead>
         <tbody>{RenderExtraComponent(sixthLessonExtraInfo)}</tbody>
       </table>
+
+      <div className={styles.scene}>
+        <p className={styles.swaggyEnglish}>Swaggy English(Lesson three)</p>
+        <p>
+          Let me tell you secret. Janet is dating Will
+          Really? 
+          You know what? Word on the street is that, Jeans is already engaged to Will, in secret
+          congratulation! I knew it! you two always looked prefect together. when’s the weeding, Where will you go to for your honeymoon
+        </p>
+      </div>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th colSpan={2}>Lesson three swaggy</th>
+          </tr>
+        </thead>
+        <tbody>{RenderExtraComponent(thirdLessonSwaggy)}</tbody>
+      </table>
+
       
       <div className={styles.scene}>
         <p className={styles.swaggyEnglish}>Proverb</p>
