@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-08 23:50:03
+ * @LastEditTime: 2024-08-09 00:37:32
  */
 "use client";
 import Image from "next/image";
@@ -1156,6 +1156,26 @@ export default function Home() {
         {
           originText: "Word on the street is that, Trump is not going to be the next president",
           translate: "据说，特朗普不会成为下一届美国总统"
+        },
+        {
+          originText: "not going to be",
+          translate: "不会成为"
+        }
+      ]
+    },
+    {
+      wordComponent: RenderWordComponent(
+        "be engaged to",
+        "",
+        <>{"和...订婚"}</>),
+      phraseList: [
+        {
+          originText: "We got engaged on my eighteenth birthday",
+          translate: "在18岁生日那天我们订婚了"
+        },
+        {
+          originText: "He is engaged to his college sweetheart",
+          translate: "他和他大学的恋人结婚了"
         }
       ]
     }
@@ -1278,8 +1298,8 @@ export default function Home() {
         <p>
           Let me tell you secret. Janet is dating Will
           Really? 
-          You know what? Word on the street is that, Jeans is already engaged to Will, in secret
-          congratulation! I knew it! you two always looked prefect together. when’s the weeding, Where will you go to for your honeymoon
+          <span style={{"color": "red"}}>You know what</span>? <span style={{"color": "red"}}>Word on the street</span> is that, Jeans is already engaged to Will, in secret
+          congratulation! I knew it! you two always looked prefect together. when’s the weeding, Where will you go for your honeymoon
         </p>
       </div>
 
