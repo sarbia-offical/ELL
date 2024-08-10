@@ -1,0 +1,27 @@
+.table, .table th, .table td {
+    border: 1px solid black;
+}
+.part-of-speech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.partOfSpeech{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.speechItem{
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.scene{
+  text-align: center;
+  .swaggyEnglish{
+    font-size: 20px;
+  }
+}
