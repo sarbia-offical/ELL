@@ -1,4 +1,4 @@
-import { IProverb } from "../components/enum"
+import { IProverb } from "../../components/enum"
 const list: Array<IProverb<string>> = [
     {
         originalText: "The best time to plant a tree was teen years ago, the second time is today",

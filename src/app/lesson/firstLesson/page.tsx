@@ -15,7 +15,7 @@ import {
   ProverbComponent,
   PartOfSpeechComponent,
   IExtraInfo,
-} from "../../components/index";
+} from "../../../components/index";
 import { list } from "../../owner/proverb";
 import { partOfSpeech } from "../../owner/partOfSpeech";
 

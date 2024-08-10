@@ -1,4 +1,4 @@
-import { IPartOfSpeech } from "../components/enum"
+import { IPartOfSpeech } from "../../components/enum"
 const partOfSpeech: Array<IPartOfSpeech> = [
     { label: "Noun", info: "(n.) - 名词" },
     { label: "Pronoun", info: "(pron.) - 代词" },
