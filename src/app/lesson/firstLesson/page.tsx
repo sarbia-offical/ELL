@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-10 22:56:31
+ * @LastEditTime: 2024-08-11 16:42:11
  */
 "use client";
 import styles from "./page.module.css";
@@ -451,6 +451,10 @@ export default function Home() {
       },
     ]
   );
+  useEffect(() => {
+    console.log('firstLessonExtraInfo', firstLessonExtraInfo);
+    console.log('firstLessonSwaggy', firstLessonSwaggy);
+  }, [firstLessonExtraInfo, firstLessonSwaggy]);
   return (
     <main className={styles.main}>
       {PartOfSpeechComponent(partOfSpeech)}

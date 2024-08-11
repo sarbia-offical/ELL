@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-10 21:27:01
+ * @LastEditTime: 2024-08-11 18:25:12
  */
 "use client";
 import Image from "next/image";
@@ -393,6 +393,16 @@ export default function Home() {
       },
     ]
   );
+
+  useEffect(() => {
+   console.log('fifthLessonExtraInfo', fifthLessonExtraInfo)
+   console.log('sixthLessonExtraInfo', sixthLessonExtraInfo)
+   console.log('thirdLessonSwaggy', thirdLessonSwaggy)
+  }, [
+    fifthLessonExtraInfo,
+    sixthLessonExtraInfo,
+    thirdLessonSwaggy,
+  ])
 
   return (
     <main className={styles.main}>

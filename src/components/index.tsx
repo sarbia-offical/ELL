@@ -11,5 +11,7 @@ import { IPhraseItem, IExtraInfo, IProverb, IPartOfSpeech } from "./enum";
 import { RenderWordComponent, RenderExtraComponent } from "./basic"
 import { ProverbComponent } from "./proverb";
 import { PartOfSpeechComponent } from "./partOfSpeech";
+import CourseCard from "./courseCard";
+import SwaggyCard from "./swaggyCard"
 export type { IPhraseItem, IExtraInfo, IProverb, IPartOfSpeech };
-export { RenderExtraComponent, RenderWordComponent, ProverbComponent, PartOfSpeechComponent }
+export { RenderExtraComponent, RenderWordComponent, ProverbComponent, PartOfSpeechComponent, CourseCard, SwaggyCard }
