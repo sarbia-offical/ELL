@@ -1,10 +1,10 @@
 /*
- * @Description: 
- * @version: 
+ * @Description:
+ * @version:
  * @Author: zouwenqin
  * @Date: 2024-08-11 14:19:01
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 21:43:51
+ * @LastEditTime: 2024-08-11 23:00:09
  */
 import styles from "./index.module.scss";
 import {
@@ -12,31 +12,36 @@ import {
   Card,
   CardActions,
   Typography,
-  CardContent
+  CardContent,
 } from "@mui/material";
 import { ILessonInfo } from "../../app/owner/enum";
 import { useEffect } from "react";
-import { SwaggyCard } from "../../components"
-interface IProps{
-  info: ILessonInfo
+import { SwaggyCard } from "../../components";
+interface IProps {
+  info: ILessonInfo;
+  handleClick?: (info: ILessonInfo) => void
 }
 
 const CourseCard = (props: IProps) => {
   
-  useEffect(() => {
-    console.log(props.info);
-  }, [props.info])
+  const handleClick = () => {
+    props.handleClick && props.handleClick(props.info);
+  };
 
   return (
     <div className={`${styles["course-card"]}`}>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ textAlign: 'center'}} color="text.secondary">
-            { props?.info?.title }
+          <Typography
+            variant="h5"
+            sx={{ textAlign: "center" }}
+            color="text.secondary"
+          >
+            {props?.info?.title}
           </Typography>
         </CardContent>
         <CardContent>
-          <SwaggyCard info={ props?.info?.swaggy }/>
+          <SwaggyCard info={props?.info?.swaggy} />
         </CardContent>
         <CardActions>
           <Button
@@ -44,6 +49,7 @@ const CourseCard = (props: IProps) => {
             variant="contained"
             size="large"
             fullWidth
+            onClick={() => { handleClick() }}
           >
             learn more
           </Button>
