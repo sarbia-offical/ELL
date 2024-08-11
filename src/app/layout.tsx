@@ -4,21 +4,21 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:54
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 13:45:43
+ * @LastEditTime: 2024-08-11 22:11:47
  */
 "use client";
 import { ThemeProvider } from "@mui/material/styles";
 import { createTheme } from "@mui/material/styles";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
-export const plus = Plus_Jakarta_Sans({
+const plus = Plus_Jakarta_Sans({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
-export const baselightTheme = createTheme({
+const baselightTheme = createTheme({
   direction: "ltr",
   palette: {
     primary: {
