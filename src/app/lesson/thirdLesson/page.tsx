@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 18:25:12
+ * @LastEditTime: 2024-08-13 23:09:13
  */
 "use client";
 import Image from "next/image";
@@ -391,6 +391,46 @@ export default function Home() {
           },
         ],
       },
+      {
+        wordComponent: 
+        (
+          <RenderWordComponent
+            word={"I knew it"}
+            phoneticSymbol={""}
+            translate={<>{"我早就知道，我早看出来了"}</>}
+          />
+        ),
+        phraseList: [
+          {
+            originText: "It was her! I knew it",
+            translate: "就是她！我早就知道了！"
+          },
+          {
+            originText: "After seeing the test results, Tom smiled and said, 'I knew it，I studied so hard for this exam'",
+            translate: "在看到考试结果后，tom微笑着说：我早就知道了，为了这次考试我很努力的学习了"
+          }
+        ]
+      },
+      {
+        wordComponent: 
+        (
+          <RenderWordComponent
+            word={"Perfect"}
+            phoneticSymbol={"/ˈpɜ:fɪkt/"}
+            translate={<>{"adj. 完美的；正确的 v 使完美 (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"}</>}
+          />
+        ),
+        phraseList: [
+          {
+            originText: "It was a perfect day for picnic, And we are about to set out",
+            translate: "今天是野餐的好天气，我们即将出发"
+          },
+          {
+            originText: "He tries to perfect english",
+            translate: "他尝试让自己的英语完美"
+          }
+        ]
+      }
     ]
   );
 
@@ -432,8 +472,8 @@ export default function Home() {
           Let me tell you secret. Janet is dating Will Really?
           <span style={{ color: "red" }}>You know what</span>?{" "}
           <span style={{ color: "red" }}>Word on the street</span> is that,
-          Jeans is already engaged to Will, in secret congratulation! I knew it!
-          you two always looked prefect together. when’s the weeding, Where will
+          Jeans is already engaged to Will, in secret congratulation! <span style={{ color: "red" }}>I knew it!</span>
+          you two always looked <span style={{ color: "red" }}>prefect</span> together. when’s the weeding, Where will
           you go for your honeymoon
         </p>
       </div>
