@@ -1,0 +1,26 @@
+.water-fall{
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-flow: row dense;
+    grid-auto-rows: 10vh;
+}
+@media (min-width: 1050px) {
+    .water-fall{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+@media (min-width: 769px) and (max-width: 1050px) {
+    .water-fall {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+    .water-fall {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+@media (max-width: 550px) {
+    .water-fall {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}

@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-07-30 00:22:58
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 16:42:11
+ * @LastEditTime: 2024-08-17 23:27:21
  */
 "use client";
 import styles from "./page.module.css";
@@ -15,9 +15,93 @@ import {
   ProverbComponent,
   PartOfSpeechComponent,
   IExtraInfo,
+  WaterFall,
+  WaterFallItem,
+  IWaterFallItem,
 } from "../../../components/index";
 import { list } from "../../owner/proverb";
 import { partOfSpeech } from "../../owner/partOfSpeech";
+import { firstLesson } from "../../owner/firstLesson";
+import { IWordInfo } from "@/app/owner/enum";
+
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+
+interface IRenderWordDetail {
+  detail: IWordInfo;
+}
+const RenderWordDetail = (props: IRenderWordDetail) => {
+  const { word, phraseList } = props.detail;
+  return (
+    <Card
+      style={{
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        padding: '10px',
+        boxSizing: 'border-box'
+      }}
+    >
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {word.originalWord}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {word.phoneticSymbol}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {word.translate}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button
+          color="primary"
+          variant="contained"
+          size="large"
+          fullWidth
+          onClick={() => {
+            console.log('learn more');
+          }}
+        >
+          learn more
+        </Button>
+      </CardActions>
+    </Card>
+  );
+};
+
+const renderWaterFallItem = (wordList: Array<Array<IWordInfo>>) => {
+  const Component = () => {
+    const words: Array<IWordInfo> = wordList.flat();
+    const list = ["aa", "bb", "aa", "bb", "aa", "bb", "aa", "bb", "aa", "bb"];
+    return (
+      <>
+        {
+          // list.map((ele, index) => <WaterFallItem key={index} component={<RenderDetail info={ele}/>}/>)
+          words.map((item: IWordInfo, index: number) => {
+            const { originalWord, phoneticSymbol, translate } = item.word;
+            const wordLength = String(
+              originalWord + phoneticSymbol + translate
+            ).length;
+            return (
+              <WaterFallItem
+                key={index}
+                wordLength={wordLength}
+                component={<RenderWordDetail detail={item} />}
+              />
+            );
+          })
+        }
+      </>
+    );
+  };
+  return Component;
+};
 
 export default function Home() {
   const [firstLessonExtraInfo, setFirstLessonExtraInfo] = useState<
@@ -451,13 +535,15 @@ export default function Home() {
       },
     ]
   );
+
+  const TestWaterFall = WaterFall(renderWaterFallItem(firstLesson.wordList));
   useEffect(() => {
-    console.log('firstLessonExtraInfo', firstLessonExtraInfo);
-    console.log('firstLessonSwaggy', firstLessonSwaggy);
+    console.log("firstLessonExtraInfo", firstLessonExtraInfo);
+    console.log("firstLessonSwaggy", firstLessonSwaggy);
   }, [firstLessonExtraInfo, firstLessonSwaggy]);
   return (
     <main className={styles.main}>
-      {PartOfSpeechComponent(partOfSpeech)}
+      {/* {PartOfSpeechComponent(partOfSpeech)}
       <table className={styles.table}>
         <thead>
           <tr>
@@ -507,7 +593,8 @@ export default function Home() {
           <RenderExtraComponent list={firstLessonSwaggy} />
         </tbody>
       </table>
-      {ProverbComponent(list)}
+      {ProverbComponent(list)} */}
+      <TestWaterFall />
     </main>
   );
 }

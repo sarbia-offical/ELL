@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 21:26:39
+ * @LastEditTime: 2024-08-17 23:49:28
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -327,7 +327,7 @@ export const swaggyList: Array<IWordInfo> = [
   {
     word: {
       originalWord: "property ownership certificate",
-      phoneticSymbol: "",
+      phoneticSymbol: "/ˈprɒpəti ˈəʊnəʃɪp səˈtɪfɪkət/",
       translate: ["房产证"],
     },
     phraseList: [
