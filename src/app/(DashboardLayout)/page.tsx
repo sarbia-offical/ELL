@@ -13,6 +13,7 @@ import { Grid } from "@mui/material";
 import { firstLesson } from "../owner/firstLesson";
 import { secondLesson } from "../owner/secondLesson";
 import { thirdLesson } from "../owner/thirdLesson";
+import { fourthLesson } from "../owner/fourthLesson";
 import { ILessonInfo } from "../owner/enum";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -22,6 +23,7 @@ const Dashboard = () => {
     firstLesson,
     secondLesson,
     thirdLesson,
+    fourthLesson
   ]);
   return (
     <div className={styles["page-container"]}>

@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 21:27:31
+ * @LastEditTime: 2024-08-19 00:20:49
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -277,7 +277,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "Word on the",
+      originalWord: "Word on the street",
       phoneticSymbol: "",
       translate: ["坊间谣言/据说"],
     },
@@ -310,12 +310,46 @@ export const swaggyList: Array<IWordInfo> = [
       },
     ],
   },
+  {
+    word: {
+      originalWord: "I knew it",
+      phoneticSymbol: "/aɪ njuː ɪt/",
+      translate: ["我早就知道","我早看出来了"]
+    },
+    phraseList: [
+      {
+        originText: "After seeing the test results, tom smiled and said, 'I knew it, i studied so hard for this exam'",
+        translate: "在看到考试结果后，汤姆笑着说：我就知道！我为了这次考试花了很大的功夫"
+      },
+      {
+        originText: "It was her, I knew it！",
+        translate: "就是她，我就知道！"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Perfect",
+      phoneticSymbol: "/ˈpɜ:fɪkt/",
+      translate: ["adj. 完美的；正确的 v 使完美", " (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"]
+    },
+    phraseList: [
+      {
+        originText: "It was perfect day for picnic, And we are about to set out",
+        translate: "这是野餐的好天气，我们即将出发"
+      },
+      {
+        originText: "He tried to perfect his english",
+        translate: "他试图让他英语完美"
+      }
+    ]
+  }
 ];
 export const thirdLesson: ILessonInfo = {
   title: "Lesson Three [a:]/[ʌ]",
   swaggy: {
     originText:
-      "Let me tell you secret. Janet is dating Will Really? [0]? [1] is that, Jeans is already [2] Will, in secret congratulation! I knew it! you two always looked prefect together. when’s the weeding, Where will you go for your honeymoon",
+      "Let me tell you secret. Janet is dating Will Really? [0]? [1] is that, Jeans is already [2] Will, in secret congratulation! [3]! you two always looked [4] together. when’s the weeding, Where will you go for your honeymoon",
     points: [
       {
         word: {
@@ -357,6 +391,40 @@ export const thirdLesson: ILessonInfo = {
           }
         ],
       },
+      {
+        word: {
+          originalWord: "I knew it",
+          phoneticSymbol: "/aɪ njuː ɪt/",
+          translate: ["我早就知道","我早看出来了"]
+        },
+        phraseList: [
+          {
+            originText: "After seeing the test results, tom smiled and said, 'I knew it, i studied so hard for this exam'",
+            translate: "在看到考试结果后，汤姆笑着说：我就知道！我为了这次考试花了很大的功夫"
+          },
+          {
+            originText: "It was her, I knew it！",
+            translate: "就是她，我就知道！"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "perfect",
+          phoneticSymbol: "/ˈpɜ:fɪkt/",
+          translate: ["adj. 完美的；正确的 v 使完美", " (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"]
+        },
+        phraseList: [
+          {
+            originText: "It was perfect day for picnic, And we are about to set out",
+            translate: "这是野餐的好天气，我们即将出发"
+          },
+          {
+            originText: "He tried to perfect his english",
+            translate: "他试图让他英语完美"
+          }
+        ]
+      }
     ],
   },
   wordList: [wordList, swaggyList],

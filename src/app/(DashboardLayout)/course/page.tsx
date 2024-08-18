@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { firstLesson } from "../../owner/firstLesson";
 import { secondLesson } from "../../owner/secondLesson";
 import { thirdLesson } from "../../owner/thirdLesson";
+import { fourthLesson } from "../../owner/fourthLesson";
 import { IWordInfo } from "@/app/owner/enum";
 import {
   Card,
@@ -43,7 +44,7 @@ const RenderPhraseListDialog = (props: IRenderPhraseList) => {
       <DialogTitle>Phrase</DialogTitle>
       <DialogContent>
         <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+          sx={{ width: "100%", bgcolor: "background.paper" }}
         >
           {props.detail.map((item: IPhraseItem, index: number) => (
             <ListItem
@@ -166,7 +167,7 @@ const renderWaterFallItem = (
 const Course = () => {
   const searchParams = useSearchParams();
   const id: number = (searchParams.get("id") as unknown as number) || 0;
-  const lessons = [firstLesson, secondLesson, thirdLesson];
+  const lessons = [firstLesson, secondLesson, thirdLesson, fourthLesson];
   const [isClose, setIsClose] = useState<boolean>(false);
   const [phrases, setPhrases] = useState<Array<IPhraseItem>>([]);
   const handleOpen = (phraseList: Array<IPhraseItem>) => {
