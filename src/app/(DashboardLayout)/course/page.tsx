@@ -38,6 +38,7 @@ const RenderPhraseListDialog = (props: IRenderPhraseList) => {
         props.handleClose && props.handleClose(false);
       }}
       aria-describedby="alert-dialog-slide-description"
+      fullWidth
     >
       <DialogTitle>Phrase</DialogTitle>
       <DialogContent>
