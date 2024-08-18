@@ -434,16 +434,6 @@ export default function Home() {
     ]
   );
 
-  useEffect(() => {
-   console.log('fifthLessonExtraInfo', fifthLessonExtraInfo)
-   console.log('sixthLessonExtraInfo', sixthLessonExtraInfo)
-   console.log('thirdLessonSwaggy', thirdLessonSwaggy)
-  }, [
-    fifthLessonExtraInfo,
-    sixthLessonExtraInfo,
-    thirdLessonSwaggy,
-  ])
-
   return (
     <main className={styles.main}>
       {PartOfSpeechComponent(partOfSpeech)}

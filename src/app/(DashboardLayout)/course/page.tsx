@@ -5,7 +5,22 @@ import { firstLesson } from "../../owner/firstLesson";
 import { secondLesson } from "../../owner/secondLesson";
 import { thirdLesson } from "../../owner/thirdLesson";
 import { IWordInfo } from "@/app/owner/enum";
-import { Card, CardContent, Typography, Box, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  Button,
+  List,
+  ListItem,
+  IconButton,
+  ListItemText,
+} from "@mui/material";
 import { IPhraseItem, WaterFall, WaterFallItem } from "@/components";
 import { Translate } from "@mui/icons-material";
 import styles from "./page.module.scss";
@@ -19,19 +34,43 @@ const RenderPhraseListDialog = (props: IRenderPhraseList) => {
     <Dialog
       open={props.open}
       keepMounted
-      onClose={() => { props.handleClose && props.handleClose(false) }}
+      onClose={() => {
+        props.handleClose && props.handleClose(false);
+      }}
       aria-describedby="alert-dialog-slide-description"
     >
-      <DialogTitle>{"Use Google's location service?"}</DialogTitle>
+      <DialogTitle>Phrase</DialogTitle>
       <DialogContent>
-        <DialogContentText id="alert-dialog-slide-description">
-          Let Google help apps determine location. This means sending anonymous
-          location data to Google, even when no apps are running.
-        </DialogContentText>
+        <List
+          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+        >
+          {props.detail.map((item: IPhraseItem, index: number) => (
+            <ListItem
+              key={index}
+              disableGutters
+              sx={{
+                flexDirection: 'column',
+                alignItems: 'flex-start'
+              }}
+            >
+              <ListItemText>
+                { item.originText }
+              </ListItemText>
+              <ListItemText>
+                { item.translate }
+              </ListItemText>
+            </ListItem>
+          ))}
+        </List>
       </DialogContent>
       <DialogActions>
-        <Button onClick={() => { props.handleClose && props.handleClose(false) }}>Disagree</Button>
-        <Button onClick={() => { props.handleClose && props.handleClose(false) }}>Agree</Button>
+        <Button
+          onClick={() => {
+            props.handleClose && props.handleClose(false);
+          }}
+        >
+          Close
+        </Button>
       </DialogActions>
     </Dialog>
   );
@@ -58,7 +97,7 @@ const RenderWordDetail = (props: IRenderWordDetail) => {
       <CardContent
         component="div"
         onClick={() => {
-          props.handleOpen(phraseList)
+          props.handleOpen(phraseList);
         }}
       >
         <div className={styles["detail-content-body"]}>
@@ -94,7 +133,10 @@ const RenderWordDetail = (props: IRenderWordDetail) => {
   );
 };
 
-const renderWaterFallItem = (wordList: Array<Array<IWordInfo>>, handleOpen: (phraseList: Array<IPhraseItem>) => void) => {
+const renderWaterFallItem = (
+  wordList: Array<Array<IWordInfo>>,
+  handleOpen: (phraseList: Array<IPhraseItem>) => void
+) => {
   const Component = () => {
     const words: Array<IWordInfo> = wordList.flat();
     return (
@@ -125,11 +167,11 @@ const Course = () => {
   const id: number = (searchParams.get("id") as unknown as number) || 0;
   const lessons = [firstLesson, secondLesson, thirdLesson];
   const [isClose, setIsClose] = useState<boolean>(false);
-
+  const [phrases, setPhrases] = useState<Array<IPhraseItem>>([]);
   const handleOpen = (phraseList: Array<IPhraseItem>) => {
-    console.log('phraseList', phraseList);
     setIsClose(true);
-  }
+    setPhrases(phraseList);
+  };
 
   const TestWaterFall = WaterFall(
     renderWaterFallItem(lessons[id] ? lessons[id].wordList : [], handleOpen)
@@ -137,7 +179,13 @@ const Course = () => {
   return (
     <div className={styles["main"]}>
       <TestWaterFall />
-      <RenderPhraseListDialog open={isClose} handleClose={() => { setIsClose(false) }} detail={[]}/>
+      <RenderPhraseListDialog
+        open={isClose}
+        handleClose={() => {
+          setIsClose(false);
+        }}
+        detail={phrases}
+      />
     </div>
   );
 };

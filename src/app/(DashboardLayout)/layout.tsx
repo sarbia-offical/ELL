@@ -10,7 +10,6 @@ export default function RootLayout({
 }) {
   const router = useRouter();
   const goBack = () => {
-    console.log('window.history.length ', window.history.length );
     router.back();
   }
   return (
