@@ -4,13 +4,13 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-17 23:49:28
+ * @LastEditTime: 2024-08-18 17:49:49
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
   {
     word: {
-      originalWord: "sheep",
+      originalWord: "Sheep",
       phoneticSymbol: "[ʃi:p]",
       translate: ["n. 绵羊"],
     },
@@ -23,7 +23,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "cheap",
+      originalWord: "Cheap",
       phoneticSymbol: "[tʃi:p]",
       translate: ["adj. 便宜的/小气的"],
     },
@@ -36,7 +36,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "believe",
+      originalWord: "Believe",
       phoneticSymbol: "[bɪˈli:v]",
       translate: ["v. 相信/认定/信任"],
     },
@@ -49,7 +49,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "magazine",
+      originalWord: "Magazine",
       phoneticSymbol: "[ˈmæɡəziːn]",
       translate: ["n. 杂志/期刊"],
     },
@@ -63,7 +63,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "see",
+      originalWord: "See",
       phoneticSymbol: "/si:/",
       translate: ["vt. 看见/领会", "vi. 看/领会"],
     },
@@ -121,7 +121,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "chip",
+      originalWord: "Chip",
       phoneticSymbol: "[tʃɪp]",
       translate: ["n. 薯片", "v. 打破", "adj. (雀,栗鼠等)唧唧叫的"],
     },
@@ -138,7 +138,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "ticket",
+      originalWord: "Ticket",
       phoneticSymbol: "[ˈtɪkɪt]",
       translate: ["n. 票/罚单"],
     },
@@ -151,7 +151,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "comedy",
+      originalWord: "Comedy",
       phoneticSymbol: "[ˈkɒmədi]",
       translate: ["n. 喜剧"],
     },
@@ -164,7 +164,7 @@ export const wordList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "give",
+      originalWord: "Give",
       phoneticSymbol: "/giv/",
       translate: ["vt. 给；产生；让步；举办；授予"],
     },
@@ -232,8 +232,8 @@ export const wordList: Array<IWordInfo> = [
 export const swaggyList: Array<IWordInfo> = [
   {
     word: {
-      originalWord: "be straight with",
-      phoneticSymbol: "",
+      originalWord: "Be Straight With",
+      phoneticSymbol: "/bi streɪt wɪð/",
       translate: ["坦白/实话实说"],
     },
     phraseList: [
@@ -275,7 +275,7 @@ export const swaggyList: Array<IWordInfo> = [
   {
     word: {
       originalWord: "Even if",
-      phoneticSymbol: "",
+      phoneticSymbol: "/ˈiːvən ɪf/",
       translate: ["就算，即使"],
     },
     phraseList: [
@@ -287,7 +287,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "property",
+      originalWord: "Property",
       phoneticSymbol: "[ˈprɒpəti]",
       translate: ["房产/财产"],
     },
@@ -300,7 +300,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "ownership",
+      originalWord: "Ownership",
       phoneticSymbol: "[ˈəʊnəʃɪp]",
       translate: ["所有权"],
     },
@@ -313,7 +313,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "certificate",
+      originalWord: "Certificate",
       phoneticSymbol: "[səˈtɪfɪkət]",
       translate: ["证书"],
     },
@@ -326,7 +326,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "property ownership certificate",
+      originalWord: "Property Ownership Certificate",
       phoneticSymbol: "/ˈprɒpəti ˈəʊnəʃɪp səˈtɪfɪkət/",
       translate: ["房产证"],
     },
@@ -339,7 +339,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "necessarily",
+      originalWord: "Necessarily",
       phoneticSymbol: "[ˌnesəˈserəli]",
       translate: ["adv .必要的 必然的"],
     },
@@ -352,7 +352,7 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "necessary",
+      originalWord: "Necessary",
       phoneticSymbol: "[ˈnesəˌseri]",
       translate: ["n.必需品", "adj. 必须的/必要的"],
     },
@@ -362,7 +362,7 @@ export const swaggyList: Array<IWordInfo> = [
         translate: "这根香蕉对猴子来说是必要的",
       },
       {
-        originText: "this property ownership certificate is necessary for me",
+        originText: "This property ownership certificate is necessary for me",
         translate: "这个房产证对我来说是必须的",
       },
     ],
@@ -376,7 +376,7 @@ export const firstLesson: ILessonInfo = {
     points: [
       {
         word: {
-          originalWord: "be straight with",
+          originalWord: "Be straight with",
           phoneticSymbol: "",
           translate: ["坦白/实话实说"],
         },
@@ -390,7 +390,7 @@ export const firstLesson: ILessonInfo = {
       },
       {
         word: {
-          originalWord: "apartment",
+          originalWord: "Apartment",
           phoneticSymbol: "[əˈpɑːtmənt]",
           translate: ["n. 公寓"],
         },
@@ -403,7 +403,7 @@ export const firstLesson: ILessonInfo = {
       },
       {
         word: {
-          originalWord: "property ownership certificate",
+          originalWord: "Property Ownership Certificate",
           phoneticSymbol: "",
           translate: ["房产证"],
         },
@@ -416,7 +416,7 @@ export const firstLesson: ILessonInfo = {
       },
       {
         word: {
-          originalWord: "necessarily",
+          originalWord: "Necessarily",
           phoneticSymbol: "[ˌnesəˈserəli]",
           translate: ["adv .必要的 必然的"],
         },

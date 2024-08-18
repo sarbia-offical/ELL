@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 13:49:30
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-16 23:11:26
+ * @LastEditTime: 2024-08-18 16:53:58
  */
 "use client";
 import styles from "./page.module.scss";
@@ -31,12 +31,7 @@ const Dashboard = () => {
             <CourseCard
               info={ele}
               handleClick={(info: ILessonInfo) => {
-                let pageList = [
-                  "/lesson/firstLesson",
-                  "/lesson/secondLesson",
-                  "/lesson/thirdLesson",
-                ];
-                router.push(`${pageList[index]}`);
+                router.push(`/course?id=${index}`);
               }}
             />
           </Grid>

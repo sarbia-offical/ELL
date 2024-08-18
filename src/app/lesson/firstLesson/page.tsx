@@ -78,11 +78,9 @@ const RenderWordDetail = (props: IRenderWordDetail) => {
 const renderWaterFallItem = (wordList: Array<Array<IWordInfo>>) => {
   const Component = () => {
     const words: Array<IWordInfo> = wordList.flat();
-    const list = ["aa", "bb", "aa", "bb", "aa", "bb", "aa", "bb", "aa", "bb"];
     return (
       <>
         {
-          // list.map((ele, index) => <WaterFallItem key={index} component={<RenderDetail info={ele}/>}/>)
           words.map((item: IWordInfo, index: number) => {
             const { originalWord, phoneticSymbol, translate } = item.word;
             const wordLength = String(

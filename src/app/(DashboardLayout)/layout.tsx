@@ -1,17 +1,31 @@
+"use client"
 import styles from "./layout.module.scss";
-import { Box } from "@mui/material";
+import { IconButton, Button } from "@mui/material";
+import { RotateLeft, FormatAlignRight } from "@mui/icons-material";
+import { useRouter } from "next/navigation";
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const router = useRouter();
+  const goBack = () => {
+    console.log('window.history.length ', window.history.length );
+    router.back();
+  }
   return (
     <div className={styles.frame}>
-      <div className={styles['gradient-1']}></div>
-      <div className={styles['gradient-2']}></div>
-      <div className={styles['inner-container']}>
-        {children}
+      <div className={styles["gradient-1"]}></div>
+      <div className={styles["gradient-2"]}></div>
+      <div className={styles["sidebar"]}>
+      <IconButton aria-label="delete" size="small" onClick={goBack}>
+        <RotateLeft/>
+      </IconButton>
+      <IconButton aria-label="delete" size="small">
+        <FormatAlignRight />
+      </IconButton>
       </div>
+      <div className={styles["inner-container"]}>{children}</div>
     </div>
   );
 }
