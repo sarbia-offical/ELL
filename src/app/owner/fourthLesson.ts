@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-19 00:53:43
+ * @LastEditTime: 2024-08-20 01:39:47
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -147,6 +147,97 @@ export const wordList: Array<IWordInfo> = [
       {
         originText: "She had left the party before we arrived",
         translate: "我们到达之前，她已经离开了聚会"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Delivery",
+      phoneticSymbol: "[dɪˈlɪv(ə)ri]",
+      translate: ["n. 分娩/交付/交货"],
+    },
+    phraseList: [
+      {
+        originText: "The delivery man sent my package this morning",
+        translate: "快递小哥今早送来了我的快递"
+      },
+      {
+        originText: "Delivering a package to a private residence",
+        translate: "将货物送到私人住处"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "be + adj + about",
+      phoneticSymbol: "[əˈbaʊt]",
+      translate: ["为/对...感到..."]
+    },
+    phraseList: [
+      {
+        originText: "She is happy/excited/worried/nervous about this exam",
+        translate: "她对这次考试感到很高兴/兴奋/担忧/紧张 （be happy/excited/worried/nervous about）"
+      },
+      {
+        originText: "They will be excited about learning",
+        translate: "他们将会对学习感到兴奋"
+      },
+      {
+        originText: "You gotta be excited about that",
+        translate: "你应该对此感到兴奋"
+      },
+      {
+        originText: "But should i be worried about you",
+        translate: "我应该为你感到担心吗"
+      },
+      {
+        originText: "There is nothing to be worried about",
+        translate: "这没什么好担心的"
+      },
+      {
+        originText: "You should be happy about that",
+        translate: "你应该为此感到高兴"
+      },
+      {
+        originText: "She won't be happy about that",
+        translate: "她不会为此高兴的"
+      },
+      {
+        originText: "Don't be nervous about your speech",
+        translate: "不要对你的演讲感到紧张"
+      },
+      {
+        originText: "You have nothing to be nervous about",
+        translate: "你没什么可紧张的"
+      },
+      {
+        originText: "There is noting to be worried about",
+        translate: "没什么值得紧张的"
+      },
+      {
+        originText: "Maybe sometimes you are worried about your work",
+        translate: "也许有时你会对你的工作感到担忧（be worried about 对某事担心）"
+      },
+      {
+        originText: "I'm just so worried about us losing the key",
+        translate: "我只是担心我们会丢掉钥匙"
+      },
+      {
+        originText: "I'm just so worried about our having lost the key",
+        translate: "我非常担心我们已经丢掉了钥匙"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "be about to do sth",
+      phoneticSymbol: "[əˈbaʊt]",
+      translate: ["正要做某事"]
+    },
+    phraseList: [
+      {
+        originText: "we are about to leave",
+        translate: "我们准备离开了"
       }
     ]
   }
