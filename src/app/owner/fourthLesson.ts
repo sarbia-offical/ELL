@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-20 01:39:47
+ * @LastEditTime: 2024-08-21 00:16:22
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -183,7 +183,7 @@ export const wordList: Array<IWordInfo> = [
         translate: "他们将会对学习感到兴奋"
       },
       {
-        originText: "You gotta be excited about that",
+        originText: "You have to be excited about that",
         translate: "你应该对此感到兴奋"
       },
       {
@@ -236,8 +236,89 @@ export const wordList: Array<IWordInfo> = [
     },
     phraseList: [
       {
-        originText: "we are about to leave",
+        originText: "We are about to leave",
         translate: "我们准备离开了"
+      },
+      {
+        originText: "I'm about to start this game",
+        translate: "我准备开始这个游戏"
+      },
+      {
+        originText: "The movie is about to start",
+        translate: "这个电影要开始了"
+      },
+      {
+        originText: "When you are about to leave work, But your boss says 'before you go, please do this work'",
+        translate: "在你快要下班的时候，你老板说‘走之前，请完成这项任务’"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "verb + about",
+      phoneticSymbol: "[əˈbaʊt]",
+      translate: ["关于"]
+    },
+    phraseList: [
+      {
+        originText: "Think about",
+        translate: "考虑"
+      },
+      {
+        originText: "I will think about",
+        translate: "我会考虑的"
+      },
+      {
+        originText: "Don't think about it, think about your face",
+        translate: "不要考虑它，考虑下你的表情"
+      },
+      {
+        originText: "Talk about",
+        translate: "讨论"
+      },
+      {
+        originText: "Talk about what",
+        translate: "讨论什么"
+      },
+      {
+        originText: "Talk about anything",
+        translate: "什么都可以讨论"
+      },
+      {
+        originText: "Talk about pressure",
+        translate: "讨论一下压力"
+      },
+      {
+        originText: "Care about",
+        translate: "在意/关心"
+      },
+      {
+        originText: "We care about you",
+        translate: "我们很关心你"
+      },
+      {
+        originText: "I don't care about Mobile phones",
+        translate: "我不关心手机"
+      },
+      {
+        originText: "You should complain about that",
+        translate: "你应该对此不满"
+      },
+      {
+        originText: "What else did i complain about",
+        translate: "我还对什么表达过不满"
+      },
+      {
+        originText: "Move about",
+        translate: "移动/走动"
+      },
+      {
+        originText: "You are free now to move about the cabin",
+        translate: "你现在可以自由地在机舱内走动了"
+      },
+      {
+        originText: "Move your arms about",
+        translate: "摆动你的手臂"
       }
     ]
   }
