@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-21 00:16:22
+ * @LastEditTime: 2024-08-22 00:51:27
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -250,6 +250,18 @@ export const wordList: Array<IWordInfo> = [
       {
         originText: "When you are about to leave work, But your boss says 'before you go, please do this work'",
         translate: "在你快要下班的时候，你老板说‘走之前，请完成这项任务’"
+      },
+      {
+        originText: "She is about to leave",
+        translate: "她马上要走了"
+      },
+      {
+        originText: "A great thing is about to happen",
+        translate: "伟大的事情即将发生"
+      },
+      {
+        originText: "A great things are about to happen",
+        translate: "许多伟大的事情即将发生（单数is复数are）"
       }
     ]
   },
@@ -327,8 +339,10 @@ export const swaggyList: Array<IWordInfo> = [];
 export const fourthLesson: ILessonInfo = {
   title: "Lesson four [ə]/[ə:]",
   swaggy: {
-    originText:
-      "",
+    originText: `
+    I'm really looking forward to having you again. Oh it's getting late now. you can stay over if you don't want to go home, 
+    Get out of here, You are so rude! ,
+    Oh really? Alright, That's a really irresistible offer, I don't have enough cash for a taxi anyway`,
     points: [],
   },
   wordList: [wordList, swaggyList],
