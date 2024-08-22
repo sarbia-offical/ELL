@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 20:44:52
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 22:06:26
+ * @LastEditTime: 2024-08-22 23:23:28
  */
 import { ISwaggy, IWordInfo } from "../../app/owner/enum";
 import { Typography } from "@mui/material";
@@ -19,7 +19,9 @@ const renderOriginText = (originText: string, arr: Array<IWordInfo>): any => {
     list.push(ele)
     if(index < arr.length){
       list.push(
-        <span className={styles['tooltip']} key={index}>
+        <span className={styles['tooltip']} key={index} onClick={() => {
+          console.log('arr', arr[index]);
+        }}>
           {arr[index].word.originalWord}
         </span>
       )

@@ -10,16 +10,13 @@ import {
   Card,
   CardContent,
   Typography,
-  Box,
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogContentText,
   DialogActions,
   Button,
   List,
   ListItem,
-  IconButton,
   ListItemText,
 } from "@mui/material";
 import { IPhraseItem, WaterFall, WaterFallItem } from "@/components";
@@ -145,10 +142,6 @@ const renderWaterFallItem = (
       <>
         {!!words.length &&
           words.map((item: IWordInfo, index: number) => {
-            const { originalWord, phoneticSymbol, translate } = item.word;
-            const wordLength = String(
-              originalWord + phoneticSymbol + translate
-            ).length;
             return (
               <WaterFallItem
                 key={index}

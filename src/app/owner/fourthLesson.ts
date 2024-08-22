@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-22 00:51:27
+ * @LastEditTime: 2024-08-23 00:38:36
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -333,17 +333,320 @@ export const wordList: Array<IWordInfo> = [
         translate: "摆动你的手臂"
       }
     ]
+  },
+  {
+    word: {
+      originalWord: "Sir",
+      phoneticSymbol: "/sɜː/",
+      translate: ["n. 先生/阁下"]
+    },
+    phraseList: [
+      {
+        originText: "After you, sir",
+        translate: "你先请"
+      },
+      {
+        originText: "Excuse me, sir, could you help me?",
+        translate: "先生，不好意思，能帮帮我吗"
+      },
+      {
+        originText: "Sorry sir, We are leaving work now",
+        translate: "对不起先生，我们下班了"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Early",
+      phoneticSymbol: "/‘ɜːlɪ/",
+      translate: ["adj. 早的", "adv.	提前"]
+    },
+    phraseList: [
+      {
+        originText: "She agreed to let me go early",
+        translate: "她同意我早点走"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Dirty",
+      phoneticSymbol: "/'dɜːtɪ/",
+      translate: ["adj. 卑鄙的/肮脏的"]
+    },
+    phraseList: [
+      {
+        originText: "That's a dirty move",
+        translate: "这招儿够损的"
+      },
+      {
+        originText: "That's a dirty T-shirt",
+        translate: "这是件脏T恤"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Birthday",
+      phoneticSymbol: "[ˈbɜrθˌdeɪ]",
+      translate: ["n.	生日"]
+    },
+    phraseList: [
+      {
+        originText: "Happy birthday, I'm only here for the cake",
+        translate: "生日快乐，我来这只是为了蛋糕"
+      },
+      {
+        originText: "On my birthday, my mother sent me a perfect necklace",
+        translate: "在我的生日那天，我妈妈送了我一条完美的项链"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Work",
+      phoneticSymbol: "[wɜːk]",
+      translate: ["n. 工作", "vi. 作用"]
+    },
+    phraseList: [
+      {
+        originText: "People always do dirty work",
+        translate: "人们总是做费力不讨好的事情"
+      },
+      {
+        originText: "Work out",
+        translate: "解决/健身"
+      },
+      {
+        originText: "We will work out this problem",
+        translate: "我们会解决这个问题"
+      },
+      {
+        originText: "Things will work out",
+        translate: "事情终将解决/车到山前必有路"
+      },
+      {
+        originText: "I work out there too",
+        translate: "我也在那健身（有健身的意思）"
+      },
+      {
+        originText: "Work on",
+        translate: "忙于/有用",
+      },
+      {
+        originText: "It didn't work on us",
+        translate: "这对我们没用"
+      },
+      {
+        originText: "You should work on your work",
+        translate: "你应该在工作上花更多时间"
+      },
+      {
+        originText: "Get worked up",
+        translate: "不安的/紧张的/激动的/生气的"
+      },
+      {
+        originText: "I get a little worked up",
+        translate: "我有一点点不安/紧张/激动/生气"
+      },
+      {
+        originText: "I'm so worked up",
+        translate: "我很不安/紧张/激动/生气"
+      },
+      {
+        originText: "Get down to work",
+        translate: "办正事"
+      },
+      {
+        originText: "Let's get down to work",
+        translate: "我们办正事吧/开始干活吧"
+      }
+    ]
   }
 ];
-export const swaggyList: Array<IWordInfo> = [];
+export const swaggyList: Array<IWordInfo> = [
+  {
+    word: {
+      originalWord: "looking forward to",
+      phoneticSymbol: "/ˈlʊkɪŋ ˈfɔːrwərd/",
+      translate: ["期盼/盼望"],
+    },
+    phraseList: [
+      {
+        originText: "I'm look forward to this show",
+        translate: "我期待着这场演出"
+      },
+      {
+        originText: "I'm looking forward to seeing you again",
+        translate: "我期待着再次见到你"
+      }
+    ],
+  },
+  {
+    word: {
+      originalWord: "stay over",
+      phoneticSymbol: "/steɪ ˈoʊvər/",
+      translate: ['留宿/过夜']
+    },
+    phraseList: [
+      {
+        originText: "You can stay over if you want",
+        translate: "如果你愿意，你可以在这留宿"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "Get out to here",
+      phoneticSymbol: "/get aʊt tə hɪər/",
+      translate: ["从这里离开/试语境可翻译为滚出去"]
+    },
+    phraseList: [
+      {
+        originText: "Please get out to here as soon as possible",
+        translate: "请尽快从这里出去"
+      },
+      {
+        originText: "as soon as possible/ASAP",
+        translate: "尽快"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "rude",
+      phoneticSymbol: "[rud]",
+      translate: ["adj. 粗鲁的"]
+    },
+    phraseList: [
+      {
+        originText: "Why are you so rude to your mother",
+        translate: "你为什么对你妈妈这么粗鲁"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "irresistible",
+      phoneticSymbol: "/ˌɪrɪˈzɪstəbl/",
+      translate: ["adj. 不可抗拒的"]
+    },
+    phraseList: [
+      {
+        originText: "Her smile is irresistible",
+        translate: "她的微笑是不可抗拒的"
+      }
+    ]
+  },
+  {
+    word: {
+      originalWord: "anyway",
+      phoneticSymbol: "[ˈeniˌweɪ]",
+      translate: ["adv.	反正/总之/总而言之"]
+    },
+    phraseList: [
+      {
+        originText: "Anyway, I really need this necklace",
+        translate: "总而言之，我真的需要那条项链"
+      }
+    ]
+  }
+];
 export const fourthLesson: ILessonInfo = {
   title: "Lesson four [ə]/[ə:]",
   swaggy: {
     originText: `
-    I'm really looking forward to having you again. Oh it's getting late now. you can stay over if you don't want to go home, 
-    Get out of here, You are so rude! ,
-    Oh really? Alright, That's a really irresistible offer, I don't have enough cash for a taxi anyway`,
-    points: [],
+    I'm really [0] having you again. Oh it's getting late now. you can [1] if you don't want to go home, 
+    Get [2], You are so [3]! ,
+    Oh really? Alright, That's a really [4] offer, I don't have enough cash for a taxi [5]`,
+    points: [
+      {
+        word: {
+          originalWord: "looking forward to",
+          phoneticSymbol: "/ˈlʊkɪŋ ˈfɔːrwərd/",
+          translate: ["期盼/盼望"]
+        },
+        phraseList: [
+          {
+            originText: "I'm look forward to this show",
+            translate: "我期待着这场演出"
+          },
+          {
+            originText: "I'm looking forward to seeing you again",
+            translate: "我期待着再次见到你"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "stay over",
+          phoneticSymbol: "/steɪ ˈoʊvər/",
+          translate: ["留宿/过夜"]
+        },
+        phraseList: [
+          {
+            originText: "You can stay over if you want",
+            translate: "如果你愿意，你可以留宿"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "get out to here",
+          phoneticSymbol: "/get aʊt tə hɪər/",
+          translate: ["从这里离开/试语境可翻译为滚出去"]
+        },
+        phraseList: [
+          {
+            originText: "Please get out to here as soon as possible",
+            translate: "请尽快离开这里"
+          },
+          {
+            originText: "as soon as possible/ASAP",
+            translate: "尽快"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "rude",
+          phoneticSymbol: "[rud]",
+          translate: ["adj. 粗鲁的"]
+        },
+        phraseList: [
+          {
+            originText: "Why are you so rude to your mother",
+            translate: "你为什么对你妈妈这么粗鲁"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "irresistible",
+          phoneticSymbol: "/ˌɪrɪˈzɪstəbl/",
+          translate: ["adj. 不可抗拒的"]
+        },
+        phraseList: [
+          {
+            originText: "Her smile is irresistible",
+            translate: "她的微笑是不可抗拒的"
+          }
+        ]
+      },
+      {
+        word: {
+          originalWord: "anyway",
+          phoneticSymbol: "[ˈeniˌweɪ]",
+          translate: ["adv.	反正/总之/总而言之"]
+        },
+        phraseList: [
+          {
+            originText: "Anyway, I really need this necklace",
+            translate: "总而言之，我真的需要那条项链"
+          }
+        ]
+      }
+    ],
   },
   wordList: [wordList, swaggyList],
 };
