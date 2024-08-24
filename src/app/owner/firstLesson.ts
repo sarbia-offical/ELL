@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-18 17:49:49
+ * @LastEditTime: 2024-08-24 14:07:24
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -372,7 +372,7 @@ export const firstLesson: ILessonInfo = {
   title: "Lesson One [i:]/[i]",
   swaggy: {
     originText:
-      "En heh, I’ll just [0], we have not bought a [1] yet, Even if we did, we don’t put your name into the [2].it’s ok, we don’t [3] to buy one, renting ones would be fine. cars will be cheaper in the next few years, so we do not intend to buy one either. will, public transportation is way more convenient and eco-friendly anyway.",
+      "En heh, I’ll just [0], we have not bought a [1] yet, Even if we did, we don’t put your name into the [2].it’s ok, we don’t [3] need to buy one, renting ones would be fine. cars will be cheaper in the next few years, so we do not intend to buy one either. will, public transportation is way more convenient and eco-friendly anyway.",
     points: [
       {
         word: {

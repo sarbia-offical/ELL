@@ -6,6 +6,7 @@
  * @LastEditors: zouwenqin
  * @LastEditTime: 2024-08-22 23:23:28
  */
+"use client"
 import { ISwaggy, IWordInfo } from "../../app/owner/enum";
 import { Typography } from "@mui/material";
 import styles from "./index.module.scss";

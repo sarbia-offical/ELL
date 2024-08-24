@@ -557,8 +557,7 @@ export const fourthLesson: ILessonInfo = {
   swaggy: {
     originText: `
     I'm really [0] having you again. Oh it's getting late now. you can [1] if you don't want to go home, 
-    Get [2], You are so [3]! ,
-    Oh really? Alright, That's a really [4] offer, I don't have enough cash for a taxi [5]`,
+    [2], You are so [3]! , Oh really? Alright, That's a really [4] offer, I don't have enough cash for a taxi [5]`,
     points: [
       {
         word: {
@@ -592,7 +591,7 @@ export const fourthLesson: ILessonInfo = {
       },
       {
         word: {
-          originalWord: "get out to here",
+          originalWord: "Get out to here",
           phoneticSymbol: "/get aʊt tə hɪər/",
           translate: ["从这里离开/试语境可翻译为滚出去"]
         },

@@ -1,10 +1,10 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { firstLesson } from "../../owner/firstLesson";
-import { secondLesson } from "../../owner/secondLesson";
-import { thirdLesson } from "../../owner/thirdLesson";
-import { fourthLesson } from "../../owner/fourthLesson";
+import { firstLesson } from "@/app/owner/firstLesson";
+import { secondLesson } from "@/app/owner/secondLesson";
+import { thirdLesson } from "@/app/owner/thirdLesson";
+import { fourthLesson } from "@/app/owner/fourthLesson";
 import { IWordInfo } from "@/app/owner/enum";
 import {
   Card,
@@ -40,24 +40,18 @@ const RenderPhraseListDialog = (props: IRenderPhraseList) => {
     >
       <DialogTitle>Phrase</DialogTitle>
       <DialogContent>
-        <List
-          sx={{ width: "100%", bgcolor: "background.paper" }}
-        >
+        <List sx={{ width: "100%", bgcolor: "background.paper" }}>
           {props.detail.map((item: IPhraseItem, index: number) => (
             <ListItem
               key={index}
               disableGutters
               sx={{
-                flexDirection: 'column',
-                alignItems: 'flex-start'
+                flexDirection: "column",
+                alignItems: "flex-start",
               }}
             >
-              <ListItemText>
-                { item.originText }
-              </ListItemText>
-              <ListItemText>
-                { item.translate }
-              </ListItemText>
+              <ListItemText>{item.originText}</ListItemText>
+              <ListItemText>{item.translate}</ListItemText>
             </ListItem>
           ))}
         </List>
@@ -157,9 +151,14 @@ const renderWaterFallItem = (
   return Component;
 };
 
-const Course = () => {
-  const searchParams = useSearchParams();
-  const id: number = (searchParams.get("id") as unknown as number) || 0;
+interface IProps {
+  params: {
+    slug: string | number;
+  };
+}
+const Course = ({ params }: IProps) => {
+  const { slug } =  params;
+  const index: number = slug as unknown as number || 0;
   const lessons = [firstLesson, secondLesson, thirdLesson, fourthLesson];
   const [isClose, setIsClose] = useState<boolean>(false);
   const [phrases, setPhrases] = useState<Array<IPhraseItem>>([]);
@@ -169,7 +168,7 @@ const Course = () => {
   };
 
   const TestWaterFall = WaterFall(
-    renderWaterFallItem(lessons[id] ? lessons[id].wordList : [], handleOpen)
+    renderWaterFallItem(lessons[index] ? lessons[index].wordList : [], handleOpen)
   );
   return (
     <div className={styles["main"]}>

@@ -4,9 +4,9 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 14:19:01
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-11 23:00:09
+ * @LastEditTime: 2024-08-24 16:22:41
  */
-import styles from "./index.module.scss";
+import Link from "next/link"
 import {
   Button,
   Card,
@@ -15,19 +15,14 @@ import {
   CardContent,
 } from "@mui/material";
 import { ILessonInfo } from "../../app/owner/enum";
-import { useEffect } from "react";
 import { SwaggyCard } from "../../components";
+import styles from "./index.module.scss";
 interface IProps {
   info: ILessonInfo;
-  handleClick?: (info: ILessonInfo) => void
+  index: number
 }
 
 const CourseCard = (props: IProps) => {
-  
-  const handleClick = () => {
-    props.handleClick && props.handleClick(props.info);
-  };
-
   return (
     <div className={`${styles["course-card"]}`}>
       <Card sx={{ minWidth: 275 }}>
@@ -49,9 +44,10 @@ const CourseCard = (props: IProps) => {
             variant="contained"
             size="large"
             fullWidth
-            onClick={() => { handleClick() }}
           >
-            learn more
+            <Link href={`/course/${props.index}`}>
+              learn more
+            </Link>
           </Button>
         </CardActions>
       </Card>
