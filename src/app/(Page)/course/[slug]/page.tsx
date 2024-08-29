@@ -5,6 +5,7 @@ import { firstLesson } from "@/app/owner/firstLesson";
 import { secondLesson } from "@/app/owner/secondLesson";
 import { thirdLesson } from "@/app/owner/thirdLesson";
 import { fourthLesson } from "@/app/owner/fourthLesson";
+import { fifthLesson } from "@/app/owner/fifthLesson"
 import { IWordInfo } from "@/app/owner/enum";
 import {
   Card,
@@ -159,7 +160,7 @@ interface IProps {
 const Course = ({ params }: IProps) => {
   const { slug } =  params;
   const index: number = slug as unknown as number || 0;
-  const lessons = [firstLesson, secondLesson, thirdLesson, fourthLesson];
+  const lessons = [firstLesson, secondLesson, thirdLesson, fourthLesson, fifthLesson];
   const [isClose, setIsClose] = useState<boolean>(false);
   const [phrases, setPhrases] = useState<Array<IPhraseItem>>([]);
   const handleOpen = (phraseList: Array<IPhraseItem>) => {

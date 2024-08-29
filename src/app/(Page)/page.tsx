@@ -13,13 +13,15 @@ import { firstLesson } from "../owner/firstLesson";
 import { secondLesson } from "../owner/secondLesson";
 import { thirdLesson } from "../owner/thirdLesson";
 import { fourthLesson } from "../owner/fourthLesson";
+import { fifthLesson } from "../owner/fifthLesson";
 import { ILessonInfo } from "../owner/enum";
 const Dashboard = () => {
   const list = [
     firstLesson,
     secondLesson,
     thirdLesson,
-    fourthLesson
+    fourthLesson,
+    fifthLesson
   ];
   return (
     <div className={styles["page-container"]}>
