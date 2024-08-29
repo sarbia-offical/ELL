@@ -186,7 +186,7 @@ export const wordList: Array<IWordInfo> = [
     },
     {
         word: {
-            originalWord: 'red hot',
+            originalWord: 'Red hot',
             phoneticSymbol: '/rɛd hɑt/',
             translate: ['滚烫的/高温的/极端']
         },
