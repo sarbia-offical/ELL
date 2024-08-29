@@ -74,6 +74,144 @@ export const wordList: Array<IWordInfo> = [
                 translate: '城市天际线的远景镜头'
             }
         ]
+    },
+    {
+        word: {
+            originalWord: 'Sorry',
+            phoneticSymbol: '[ˈsɔri]',
+            translate: ['adj. 抱歉的/遗憾的']
+        },
+        phraseList: [
+            {
+                originText: 'I’so sorry about that',
+                translate: '我很遗憾/抱歉'
+            },
+            {
+                originText: 'I’m so sorry to hear that',
+                translate: '听到这些我很抱歉'
+            },
+            {
+                originText: 'I will make you sorry',
+                translate: '我会让你后悔的'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Hot',
+            phoneticSymbol: '/hɒt/',
+            translate: ['adj. 热的/性感的/热情的（视语境而定）']
+        },
+        phraseList: [
+            {
+                originText: 'It’s hot day',
+                translate: '今天很热'
+            },
+            {
+                originText: 'The girl is so hot',
+                translate: '这个女孩很性感'
+            },
+            {
+                originText: 'This people is so hot',
+                translate: '这些人太热情了'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Hot air',
+            phoneticSymbol: '/hɑt ɛr/',
+            translate: ['n. 吹牛/热风']
+        },
+        phraseList: [
+            {
+                originText: 'You just talk nothing but hot air',
+                translate: '你只是在说大话'
+            },
+            {
+                originText: 'it is hear like hot air',
+                translate: '它听起来像胡说八道'
+            },
+            {
+                originText: 'There’s some hot air blowing in here',
+                translate: '这里有些热空气吹过/这里有些空洞的言辞（视语境而言）'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Hot and bothered',
+            phoneticSymbol: '/hɑt ənd ˈbɑðərd/',
+            translate: ['生气和焦躁不安的']
+        },
+        phraseList: [
+            {
+                originText: 'What’s got you so hot and bothered',
+                translate: '你为什么如此焦躁不安'
+            },
+            {
+                originText: 'I’m so hot and bothered',
+                translate: '我很焦躁不安'
+            },
+            {
+                originText: 'The horse is so bothered',
+                translate: '这匹马非常不安'
+            },
+            {
+                originText: 'She is so hot and bothered about you',
+                translate: '她对你感到非常的激动和焦躁不安'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Have the hot for ...',
+            phoneticSymbol: '',
+            translate: ['喜欢/感兴趣...']
+        },
+        phraseList: [
+            {
+                originText: 'You have the hots for the girl',
+                translate: '你对那个女孩感兴趣'
+            },
+            {
+                originText: 'You have the hots for her',
+                translate: '你喜欢它'
+            },
+            {
+                originText: 'Tom has the hot for the new nurse',
+                translate: '汤姆对新来的护士感兴趣'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'red hot',
+            phoneticSymbol: '/rɛd hɑt/',
+            translate: ['滚烫的/高温的/极端']
+        },
+        phraseList: [
+            {
+                originText: 'Red hot air',
+                translate: '高温空气/激烈的空洞言辞'
+            },
+            {
+                originText: 'Red hot water',
+                translate: '滚烫的水'
+            },
+            {
+                originText: 'The weather is so red hot',
+                translate: '今天的天气极端高温'
+            },
+            {
+                originText: 'Red hot！How about some red hot peanuts',
+                translate: '烫手的！来点烫手的花生吧'
+            },
+            {
+                originText: 'Red hots gates of hell',
+                translate: '滚烫的地狱之门（可用来形容极端的环境/无法忍受的困境，用于文学作品表达）'
+            }
+        ]
     }
 ]
 export const fifthLesson: ILessonInfo = {
