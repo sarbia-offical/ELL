@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-23 00:38:36
+ * @LastEditTime: 2024-09-04 22:42:27
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -54,7 +54,7 @@ export const wordList: Array<IWordInfo> = [
         translate: "昨天，我所有的烦恼似乎都那么遥远。(tips: 来自The Beatles的 yesterday)"
       },
       {
-        originText: "Yesterday, Love was such an ease game to play",
+        originText: "Yesterday, Love was such an easy game to play",
         translate: "昨天，爱曾经是如此简单的游戏"
       },
       {

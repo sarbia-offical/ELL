@@ -212,6 +212,180 @@ export const wordList: Array<IWordInfo> = [
                 translate: '滚烫的地狱之门（可用来形容极端的环境/无法忍受的困境，用于文学作品表达）'
             }
         ]
+    },
+    {
+        word: {
+            originalWord: 'More',
+            phoneticSymbol: '[mɔ:(r)]',
+            translate: ['adv. 更多的；更大的', 'adj. 更多的/many的比较级']
+        },
+        phraseList: [
+            {
+                originText: 'Less is More',
+                translate: '少即是多'
+            },
+            {
+                originText: 'People always like more money',
+                translate: '人们总想要更多的财富'
+            },
+            {
+                originText: 'Would you like more food',
+                translate: '你还想要更多的食物吗'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Call',
+            phoneticSymbol: '[kɔːl]',
+            translate: ['n. 打电话/呼唤/呼吁', 'v. 呼唤']
+        },
+        phraseList: [
+            {
+                originText: 'Your call',
+                translate: '你说了算'
+            },
+            {
+                originText: 'Call me late',
+                translate: '等会打电话给我'
+            },
+            {
+                originText: 'She calls her father to ask about the test results',
+                translate: '她打电话给他爸爸问考试成绩'
+            },
+            {
+                originText: 'The Boss called Tom about the new mate at night',
+                translate: '老板晚上打电话给Tom，关于这个新同事'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Culture point',
+            phoneticSymbol: '',
+            translate: ['文化要点（付账）']
+        },
+        phraseList: [
+            {
+                originText: 'Should we pay separately or together',
+                translate: '咱是各付各的还是一起付呢？'
+            },
+            {
+                originText: 'Split the bill, please',
+                translate: '各付各的(AA)'
+            },
+            {
+                originText: 'My treat',
+                translate: '我请客(你想请客)'
+            },
+            {
+                originText: 'I will get us next round',
+                translate: '下轮我请客(有人请了你)'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Ball',
+            phoneticSymbol: '/bɔːl/',
+            translate: ['n. 球；球状物/胆识/睾丸/舞会', 'v. 做成球状/和(女性)交媾']
+        },
+        phraseList: [
+            {
+                originText: 'hand ball',
+                translate: '手球'
+            },
+            {
+                originText: 'Handball is popular sport in Europe',
+                translate: '手球在欧洲很流行'
+            },
+            {
+                originText: 'He doesn’t have the balls to do it',
+                translate: '他没有胆识这么干'
+            },
+            {
+                originText: 'She left the ball and went to see the sea witch',
+                translate: '她离开了舞会，去找了海巫婆（童话故事美人鱼）'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Door',
+            phoneticSymbol: '/dɔː/',
+            translate: ['n. 门/门口']
+        },
+        phraseList: [
+            {
+                originText: 'He finally finds the door handle',
+                translate: '他终于找到了门把手'
+            },
+            {
+                originText: 'When you leave, please close the door',
+                translate: '当你离开时，请关上门'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Talk',
+            phoneticSymbol: '[tɔk]',
+            translate: ['v. 说话', 'n. 谈话/讨论']
+        },
+        phraseList: [
+            {
+                originText: 'Money talks',
+                translate: '有钱能使鬼推磨',
+            },
+            {
+                originText: 'Pep talk',
+                translate: '动员词/鸡汤/鼓励的话'
+            },
+            {
+                originText: 'Thanks for the pep talk',
+                translate: '谢谢你的鼓励/鸡汤'
+            },
+            {
+                originText: 'Talk to/Talk with',
+                translate: '和...谈话'
+            },
+            {
+                originText: 'i would like talk with you',
+                translate: '我想和你谈谈'
+            },
+            {
+                originText: 'How to talk with your daughter',
+                translate: '如何与你的女儿沟通'
+            },
+            {
+                originText: 'Talk about',
+                translate: '谈及/讨论'
+            },
+            {
+                originText: 'Talk about that later',
+                translate: '一会再聊'
+            },
+            {
+                originText: 'small talk',
+                translate: '闲聊'
+            },
+            {
+                originText: 'I hate small talk, i want to talk about science',
+                translate: '我讨厌闲聊，我想讨论科学'
+            },
+            {
+                originText: 'Talk somebody into ...',
+                translate: '说服某人做什么'
+            },
+            {
+                originText: 'We will talk him into it',
+                translate: '我们会说服他去做这个的'
+            },
+            {
+                originText: 'The leader used the speech to talk the country into the war',
+                translate: '领导者通过演讲说服国家参战'
+            }
+        ]
     }
 ]
 export const fifthLesson: ILessonInfo = {
