@@ -13,7 +13,7 @@ export default function RootLayout({
     router.back();
   }
   return (
-    <div className={styles.frame}>
+    <div className={`${styles.frame} course-container`}>
       <div className={styles["gradient-1"]}></div>
       <div className={styles["gradient-2"]}></div>
       <div className={styles["sidebar"]}>

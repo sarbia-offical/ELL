@@ -36,6 +36,39 @@
             box-sizing: border-box;
             cursor: pointer;
             line-height: 15px;
+            &:hover .info,
+            &:focus .info {
+                visibility: visible;
+                opacity: 1;
+                transform: translate3d(0,0,0);
+            }
+            .info{
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 53px;
+                right: 0px;
+                display: block;
+                background: #286F8A;
+                width: 300px;
+                font-size: 16px;
+                line-height: 24px;
+                cursor: text;
+                visibility: hidden;
+                opacity: 0;
+                transform: translate3d(0,-20px,0);
+                transition: all .5s ease-out;
+                .pronounce {
+                    display: block;
+                    background: #fff;
+                    color: #286F8A;
+                    padding: 8px 17px 10px 17px;
+                    line-height: 16px;
+                }
+                .text {
+                    display: block;
+                    padding: 13px 17px;
+                }
+            }
         }
     }
 }

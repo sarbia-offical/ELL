@@ -497,13 +497,13 @@ export const swaggyList: Array<IWordInfo> = [
   },
   {
     word: {
-      originalWord: "Get out to here",
-      phoneticSymbol: "/get aʊt tə hɪər/",
+      originalWord: "Get out of here",
+      phoneticSymbol: "/ɡɛt aʊt əv hɪr/",
       translate: ["从这里离开/试语境可翻译为滚出去"]
     },
     phraseList: [
       {
-        originText: "Please get out to here as soon as possible",
+        originText: "Please get of to here as soon as possible",
         translate: "请尽快从这里出去"
       },
       {
@@ -591,13 +591,13 @@ export const fourthLesson: ILessonInfo = {
       },
       {
         word: {
-          originalWord: "Get out to here",
-          phoneticSymbol: "/get aʊt tə hɪər/",
+          originalWord: "Get out of here",
+          phoneticSymbol: "/ɡɛt aʊt əv hɪr/",
           translate: ["从这里离开/试语境可翻译为滚出去"]
         },
         phraseList: [
           {
-            originText: "Please get out to here as soon as possible",
+            originText: "Please get out of here as soon as possible",
             translate: "请尽快离开这里"
           },
           {

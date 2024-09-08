@@ -391,8 +391,173 @@ export const wordList: Array<IWordInfo> = [
 export const fifthLesson: ILessonInfo = {
     title: 'Lesson fifth[ɑː][ɔ:]',
     swaggy: {
-        originText: '',
-        points: []
+        originText: 'Hello sir I’ the [0], [1], And i got a wrong [2]. [3] Oh! I’m so sorry you have my [4], I will [5] to you, This meal will be [6]. Sure! My deepest [7] i won’t happen again',
+        points: [
+            {
+                word: {
+                    originalWord: "manager",
+                    phoneticSymbol: '[ˈmænɪdʒər]',
+                    translate: ["n. 经理"]
+                },
+                phraseList: [
+                    {
+                        originText: "I will be your new manager starting today",
+                        translate: "从今天起，我就是你们的新经理"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "I have already waited here for almost 1 hour",
+                    phoneticSymbol: "",
+                    translate: ["我已经在这里等了快一小时了"]
+                },
+                phraseList: [
+                    {
+                        originText: "I have already waited here for almost 1 hour",
+                        translate: "我已经在这里等了一个小时了"
+                    },
+                    {
+                        originText: "I have waited here for almost 1 hour",
+                        translate: "我在这里等了一个小时了"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "dish",
+                    phoneticSymbol: "/dɪʃ/",
+                    translate: ["n. 菜品/菜/碟子"]
+                },
+                phraseList: [
+                    {
+                        originText: "bowls and dish",
+                        translate: "碗和碟子"
+                    },
+                    {
+                        originText: "He washed the dishes",
+                        translate: "他洗掉了那些碟子"
+                    },
+                    {
+                        originText: "Cold Dish",
+                        translate: "凉菜"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "Care to explain?",
+                    phoneticSymbol: "",
+                    translate: ["可以解释一下吗"]
+                },
+                phraseList: [
+                    {
+                        originText: "Care to marry me？",
+                        translate: "可以嫁给我吗（married是已婚的意思）"
+                    },
+                    {
+                        originText: "She is married",
+                        translate: "她已婚了"
+                    },
+                    {
+                        originText: "Care to hold the door for me?",
+                        translate: "可以帮我扶一下门吗"
+                    },
+                    {
+                        originText: "Care to dance?",
+                        translate: "可以跳一支舞吗"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "deepest apologies",
+                    phoneticSymbol: "/ˈdiː.pɪst əˈpɒl.ə.dʒiz/",
+                    translate: ["诚挚的道歉"]
+                },
+                phraseList: [
+                    {
+                        originText: "Apologize for",
+                        translate: "为...道歉（apologize for的诚意更深，sorry就相当于 不好意思 对不起 ）" 
+                    },
+                    {
+                        originText: "I apologize for being late",
+                        translate: "我为迟到而道歉"
+                    },
+                    {
+                        originText: "Sorry, My apologies",
+                        translate: "对不起，我的错"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "make it up",
+                    phoneticSymbol: "/meɪk ɪt ʌp/",
+                    translate: ["和解/弥补/编造"]
+                },
+                phraseList: [
+                    {
+                        originText: "I hope I can make it up",
+                        translate: "我希望我能赶上进度/弥补"
+                    },
+                    {
+                        originText: "I don’t believer you, you make it up",
+                        translate: "我不相信你，这是你编造的"
+                    },
+                    {
+                        originText: "Make-up",
+                        translate: "化妆品"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "On the house",
+                    phoneticSymbol: "",
+                    translate: ["免单/老板请客"]
+                },
+                phraseList: [
+                    {
+                        originText: "Everybody! Drinks tonight is on the house",
+                        translate: "各位！今晚店家请客"
+                    }
+                ]
+            },
+            {
+                word: {
+                    originalWord: "regrets",
+                    phoneticSymbol: "[rɪˈɡret]",
+                    translate: ["n. 遗憾/歉意", "v. 后悔/对...遗憾"]
+                },
+                phraseList: [
+                    {
+                        originText: "It’s too late to regret",
+                        translate: "后悔已经太迟了"
+                    },
+                    {
+                        originText: "Regret to do",
+                        translate: "对要做的事情遗憾（未发生）"
+                    },
+                    {
+                        originText: "I regret to tell you, you are fired",
+                        translate: "我很遗憾的告诉你，你被解雇了"
+                    },
+                    {
+                        originText: "Regret doing",
+                        translate: "对做的事情遗憾（已经做了）"
+                    },
+                    {
+                        originText: "I regret to telling her the truth",
+                        translate: "我后悔告诉她真相"
+                    },
+                    {
+                        originText: "Shit happens",
+                        translate: "人生难免有失意时"
+                    }
+                ]
+            }
+        ]
     },
     wordList: [wordList]
 }
