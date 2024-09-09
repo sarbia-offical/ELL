@@ -386,12 +386,176 @@ export const wordList: Array<IWordInfo> = [
                 translate: '领导者通过演讲说服国家参战'
             }
         ]
+    },
+    {
+        word: {
+            originalWord: "Manager",
+            phoneticSymbol: "[ˈmænɪdʒər]",
+            translate: ["n. 经理"]
+        },
+        phraseList: [
+            {
+                originText: "I will be your new manager starting today",
+                translate: "从今天起，我就是你们的新经理了"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "Have waited for",
+            phoneticSymbol: "/hæv ˈweɪ.tɪd fɔːr/",
+            translate: ["从某个时间一直等到现在"]
+        },
+        phraseList: [
+            {
+                originText: "I have waited for you an hour",
+                translate: "我等了你一个小时了"
+            },
+            {
+                originText: "I have waited for this show for a long time",
+                translate: "我等这个节目等很久了"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "Dish",
+            phoneticSymbol: "/dɪʃ/",
+            translate: ["n. 菜品/菜/碟子"]
+        },
+        phraseList: [
+            {
+                originText: "Cold Dish",
+                translate: "凉菜"
+            },
+            {
+                originText: "Bowls and Dish",
+                translate: "碗和碟子"
+            },
+            {
+                originText: "He washed the dish",
+                translate: "他洗掉了碟子"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "Care to explain",
+            phoneticSymbol: "/keər tə ɪkˈspleɪn/",
+            translate: ["可以解释一下吗"]
+        },
+        phraseList: [
+            {
+                originText: "Care to marry me?",
+                translate: "愿意嫁给我吗（married是已婚的意思，所以这里marry）"
+            },
+            {
+                originText: "She is married",
+                translate: "她已经结婚了"
+            },
+            {
+                originText: "Care to hold the door for me?",
+                translate: "介意帮我扶一下门吗？"
+            },
+            {
+                originText: "Care to dance",
+                translate: "可以跳一支舞吗"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "apologize",
+            phoneticSymbol: "[əˈpɒləˌdʒaɪz]",
+            translate: ["v. 道歉"]
+        },
+        phraseList: [
+            {
+                originText: "Deepest apologies",
+                translate: "诚恳的道歉"
+            },
+            {
+                originText: "apologize for",
+                translate: "为...道歉（apologize for更诚恳，sorry的程度更轻）"
+            },
+            {
+                originText: "I apologize for being late",
+                translate: "我为我的迟到道歉"
+            },
+            {
+                originText: "Sorry, My apologies",
+                translate: "对不起，我道歉"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "Make it up",
+            phoneticSymbol: "/meɪk ɪt ʌp/",
+            translate: ["和解/弥补/编造"]
+        },
+        phraseList: [
+            {
+                originText: "I hope i can make it up",
+                translate: "我希望我能赶上进度/弥补"
+            },
+            {
+                originText: "I don’t believer you, you make it up",
+                translate: "我不相信你，这是你编造的"
+            },
+            {
+                originText: "Make-up",
+                translate: "化妆品"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "On the house",
+            phoneticSymbol: "/ɒn ðə haʊs/",
+            translate: ["免费赠送/老板请客"]
+        },
+        phraseList: [
+            {
+                originText: "Everybody! Drink tonight is on the house",
+                translate: "各位！今晚店家请客"
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: "Regret",
+            phoneticSymbol: " [rɪˈɡret]",
+            translate: ["n. 道歉", "v. 懊恼"]
+        },
+        phraseList: [
+            {
+                originText: "It’s too late to regret",
+                translate: "后悔已经太迟了"
+            },
+            {
+                originText: "Regret to do",
+                translate: "对要做的事情后悔（还未做）"
+            },
+            {
+                originText: "I regret to tell you that, you are fired",
+                translate: "我很遗憾告诉你这个，你被解雇了"
+            },
+            {
+                originText: "Regret doing",
+                translate: "对已经做的事情后悔"
+            },
+            {
+                originText: "I regret telling her the truth",
+                translate: "我后悔告诉了她真相"
+            }
+        ]
     }
 ]
 export const fifthLesson: ILessonInfo = {
     title: 'Lesson fifth[ɑː][ɔ:]',
     swaggy: {
-        originText: 'Hello sir I’ the [0], [1], And i got a wrong [2]. [3] Oh! I’m so sorry you have my [4], I will [5] to you, This meal will be [6]. Sure! My deepest [7] i won’t happen again',
+        originText: 'Hello sir I’m the [0], [1], And i got a wrong [2]. [3] Oh! I’m so sorry you have my [4], I will [5] to you, This meal will be [6]. Sure! My deepest [7] i won’t happen again',
         points: [
             {
                 word: {
@@ -447,7 +611,7 @@ export const fifthLesson: ILessonInfo = {
             {
                 word: {
                     originalWord: "Care to explain?",
-                    phoneticSymbol: "",
+                    phoneticSymbol: "/keər tə ɪkˈspleɪn/",
                     translate: ["可以解释一下吗"]
                 },
                 phraseList: [
@@ -514,7 +678,7 @@ export const fifthLesson: ILessonInfo = {
             {
                 word: {
                     originalWord: "On the house",
-                    phoneticSymbol: "",
+                    phoneticSymbol: "/ɒn ðə haʊs/",
                     translate: ["免单/老板请客"]
                 },
                 phraseList: [
