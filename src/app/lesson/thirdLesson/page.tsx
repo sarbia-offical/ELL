@@ -417,7 +417,7 @@ export default function Home() {
           <RenderWordComponent
             word={"Perfect"}
             phoneticSymbol={"/ˈpɜ:fɪkt/"}
-            translate={<>{"adj. 完美的；正确的 v 使完美 (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"}</>}
+            translate={<>{"adj. 完美的；正确的 (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"}</>}
           />
         ),
         phraseList: [

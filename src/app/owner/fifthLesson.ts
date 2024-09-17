@@ -129,7 +129,7 @@ export const wordList: Array<IWordInfo> = [
                 translate: '你只是在说大话'
             },
             {
-                originText: 'it is hear like hot air',
+                originText: 'it is sounds like hot air',
                 translate: '它听起来像胡说八道'
             },
             {
@@ -350,8 +350,8 @@ export const wordList: Array<IWordInfo> = [
                 translate: '和...谈话'
             },
             {
-                originText: 'i would like talk with you',
-                translate: '我想和你谈谈'
+                originText: 'I would like to talk with you',
+                translate: '我想和你谈谈(I would like to 我想)'
             },
             {
                 originText: 'How to talk with your daughter',

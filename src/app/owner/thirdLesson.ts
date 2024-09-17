@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 00:12:41
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-19 00:20:49
+ * @LastEditTime: 2024-09-17 11:18:42
  */
 import { IWordInfo, ILessonInfo, ISwaggy } from "./enum";
 export const wordList: Array<IWordInfo> = [
@@ -331,7 +331,7 @@ export const swaggyList: Array<IWordInfo> = [
     word: {
       originalWord: "Perfect",
       phoneticSymbol: "/ˈpɜ:fɪkt/",
-      translate: ["adj. 完美的；正确的 v 使完美", " (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"]
+      translate: ["adj. 完美的；正确的 (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)", "v. 使完美"]
     },
     phraseList: [
       {
@@ -412,7 +412,7 @@ export const thirdLesson: ILessonInfo = {
         word: {
           originalWord: "perfect",
           phoneticSymbol: "/ˈpɜ:fɪkt/",
-          translate: ["adj. 完美的；正确的 v 使完美", " (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)"]
+          translate: ["adj. 完美的；正确的 (是强化形容词,没有程度上的区别,因此,一般不用very等词来修饰,也不用于比较等级。)", "v. 使完美"]
         },
         phraseList: [
           {
