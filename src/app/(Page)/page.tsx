@@ -4,7 +4,7 @@
  * @Author: zouwenqin
  * @Date: 2024-08-11 13:49:30
  * @LastEditors: zouwenqin
- * @LastEditTime: 2024-08-24 16:07:56
+ * @LastEditTime: 2024-09-22 23:31:57
  */
 import styles from "./page.module.scss";
 import { CourseCard } from "../../components";
@@ -14,6 +14,7 @@ import { secondLesson } from "../owner/secondLesson";
 import { thirdLesson } from "../owner/thirdLesson";
 import { fourthLesson } from "../owner/fourthLesson";
 import { fifthLesson } from "../owner/fifthLesson";
+import { sixthLesson } from "../owner/sixthLesson";
 import { ILessonInfo } from "../owner/enum";
 const Dashboard = () => {
   const list = [
@@ -21,7 +22,8 @@ const Dashboard = () => {
     secondLesson,
     thirdLesson,
     fourthLesson,
-    fifthLesson
+    fifthLesson,
+    sixthLesson
   ];
   return (
     <div className={styles["page-container"]}>

@@ -150,9 +150,154 @@ export const wordList: Array<IWordInfo> = [
             {
                 originText: 'He just looks at this disaster happening',
                 translate: '他只是看着这灾难发生'
+            },
+            {
+                originText: 'Look back',
+                translate: '回顾/回头看'
+            },
+            {
+                originText: 'I never look back',
+                translate: '我永远也不回头'
+            },
+            {
+                originText: 'I’m never looking back, Maybe you can look back, We care about you',
+                translate: '我永远也不回头，也许你可以回头看看，我们都很关心你(looking back和前面的am构成现在进行时，can是情态动词后面接原型)'
+            },
+            {
+                originText: 'I’m apologize for being so rude to my mother',
+                translate: '我很抱歉我对我的母亲这么粗鲁'
+            },
+            {
+                originText: 'Look forward to',
+                translate: '期待/再次'
+            },
+            {
+                originText: 'I’m really looking forward to see you again',
+                translate: '我真的很期待能再次看到你'
+            },
+            {
+                originText: 'Look into',
+                translate: '调查/查看'
+            },
+            {
+                originText: 'I will look into this property ownership certificate',
+                translate: '我会调查这张房产证的'
+            },
+            {
+                originText: 'Without looking into it, there’s no truth',
+                translate: '不去调查，就没有真相'
+            },
+            {
+                originText: 'Look like',
+                translate: '看起来像'
+            },
+            {
+                originText: 'You look like superman',
+                translate: '你看起来像超人'
+            },
+            {
+                originText: '一般现在时中第三人称单数(he,she,it后面的动词要在原型后面接s)',
+                translate: 'He runs every morning/She likes pizza/The dog barks loudly'
+            },
+            {
+                originText: 'I,We,You,They保持动词原型',
+                translate: 'I like ice cream/We like pizza/You like dog/They like bark'
             }
         ]
     },
+    {
+        word: {
+            originalWord: 'Put',
+            phoneticSymbol: '[put]',
+            translate: ['v. 放/安置/说', 'n. 推/投']
+        },
+        phraseList: [
+            {
+                originText: 'Put it there/Put it here/Put it away/Put it down',
+                translate: '放在那里/放在这里/收起来/放下'
+            },
+            {
+                originText: 'Stay put',
+                translate: '保持不动/不许动'
+            },
+            {
+                originText: 'Put your hands above your head, And stay put',
+                translate: '将你的手放在头顶上，不许动'
+            },
+            {
+                originText: 'Do you have any weapons',
+                translate: '你有什么武器吗'
+            },
+            {
+                originText: 'Freeze',
+                translate: '视情况而定（冻住/冻结/停止/霜冻/）'
+            },
+            {
+                originText: 'Stay still',
+                translate: '保持这样/别动'
+            },
+            {
+                originText: 'Put on',
+                translate: '穿上'
+            },
+            {
+                originText: 'Put on your coat',
+                translate: '穿上你的外套'
+            },
+            {
+                originText: 'Put on some music',
+                translate: '放点音乐'
+            },
+            {
+                originText: 'Put on some pressure',
+                translate: '加点压力'
+            },
+            {
+                originText: 'Put off',
+                translate: '推迟'
+            },
+            {
+                originText: 'Maybe you should put off',
+                translate: '也许你该推迟一下'
+            },
+            {
+                originText: 'If i put off this interview, someone else is going to get this job',
+                translate: '如果我推迟了这次面试，那其他人就会获得这个工作'
+            },
+            {
+                originText: 'Don’t put off for tomorrow',
+                translate: '不要推迟到明天'
+            },
+            {
+                originText: 'But he didn’t seem to want to be put off',
+                translate: '但他看起来不想推迟'
+            },
+            {
+                originText: 'You can go if you have to, it’s nothing i can put it off',
+                translate: '你想去就去吧，我没法推迟'
+            },
+            {
+                originText: 'Put out',
+                translate: '熄灭'
+            },
+            {
+                originText: 'Put out the lighter',
+                translate: '把打火机熄灭了'
+            },
+            {
+                originText: 'Put ot this tanning machine light',
+                translate: '关掉这个美黑机的灯'
+            },
+            {
+                originText: 'Put oneself together',
+                translate: '振作起来/冷静下来'
+            },
+            {
+                originText: 'This bless/pep talk is nothing, put yourself together',
+                translate: '这个祝福/鼓舞士气的话没什么用，振作起来吧'
+            }
+        ]
+    }
 ]
 export const sixthLesson: ILessonInfo = {
     title: 'Lesson sixth[u][u:]',
