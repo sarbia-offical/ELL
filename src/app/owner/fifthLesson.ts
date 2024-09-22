@@ -34,7 +34,7 @@ export const wordList: Array<IWordInfo> = [
         phraseList: [
             {
                 originText: 'you look good/great/incredible/unbelievable/brilliant',
-                translate: '你看起来很好/非常棒/令人难以置信/才华横溢'
+                translate: '你看起来很好/非常棒/不可思议/令人难以置信/才华横溢'
             },
             {
                 originText: 'That’s awesome',
@@ -534,6 +534,14 @@ export const wordList: Array<IWordInfo> = [
                 translate: "后悔已经太迟了"
             },
             {
+                originText: "But it’s too late to say you are sorry",
+                translate: "但是现在说抱歉已经太晚了",
+            },
+            {
+                originText: "My man’s got a heart like a rock cast in the sea",
+                translate: "我的男人有一颗深海中的磐石般的心",
+            },
+            {
                 originText: "Regret to do",
                 translate: "对要做的事情后悔（还未做）"
             },
@@ -698,6 +706,14 @@ export const fifthLesson: ILessonInfo = {
                     {
                         originText: "It’s too late to regret",
                         translate: "后悔已经太迟了"
+                    },
+                    {
+                        originText: "But it’s too late to say you are sorry",
+                        translate: "但是现在说抱歉已经太晚了",
+                    },
+                    {
+                        originText: "My man’s got a heart like a rock cast in the sea",
+                        translate: "我的男人有一颗深海中的磐石般的心",
                     },
                     {
                         originText: "Regret to do",
