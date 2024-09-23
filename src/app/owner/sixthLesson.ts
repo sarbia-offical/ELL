@@ -297,6 +297,126 @@ export const wordList: Array<IWordInfo> = [
                 translate: '这个祝福/鼓舞士气的话没什么用，振作起来吧'
             }
         ]
+    },
+    {
+        word: {
+            originalWord: 'fool',
+            phoneticSymbol: '[ful]',
+            translate: ['n. 傻瓜/蠢人/弄臣', 'v. 愚弄/欺骗']
+        },
+        phraseList: [
+            {
+                originText: 'I’ not a fool, But you fooled me',
+                translate: '我不是傻瓜，但你骗倒我了'
+            },
+            {
+                originText: 'April fool',
+                translate: '愚人节（四月一日）'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'Shoe',
+            phoneticSymbol: '[ʃu]',
+            translate: ['n. 鞋子']
+        },
+        phraseList: [
+            {
+                originText: 'The puppy wears a new shoes',
+                translate: '这条小狗穿了一双新鞋子'
+            },
+            {
+                originText: 'High heel shoes',
+                translate: '高跟鞋'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'food',
+            phoneticSymbol: '[fud]',
+            translate: ['n. 食物']
+        },
+        phraseList: [
+            {
+                originText: 'This food today is on the house',
+                translate: '今天的食物老板请客'
+            },
+            {
+                originText: 'We need some food for the picnic',
+                translate: '我们需要一些食物去野餐'
+            },
+            {
+                originText: 'How about some food?',
+                translate: '来些吃的怎么样'
+            },
+            {
+                originText: 'Food for thought',
+                translate: '精神食粮/令人深思的事'
+            },
+            {
+                originText: 'This comment was real food for thought',
+                translate: '这条评论引人深思'
+            }
+        ]
+    },
+    {
+        word: {
+            originalWord: 'through',
+            phoneticSymbol: '[θru]',
+            translate: ['adv. 通过/直达', 'prep. 穿过/贯穿', 'adj. 结束/全程的']
+        },
+        phraseList: [
+            {
+                originText: 'Let’s go through',
+                translate: '让我们穿过去'
+            },
+            {
+                originText: 'this subway goes through the city',
+                translate: '这条地铁穿过了城市（主语是subway第三人称单数，go需要加es）'
+            },
+            {
+                originText: 'Look through',
+                translate: '仔细检查'
+            },
+            {
+                originText: 'I look through your letters',
+                translate: '我仔细检查了你的信件'
+            },
+            {
+                originText: 'See through',
+                translate: '看穿/识破'
+            },
+            {
+                originText: 'Nobody would see through me',
+                translate: '没人能看穿我'
+            },
+            {
+                originText: 'Walk through',
+                translate: '根据上下文（一步步讲解/行走）'
+            },
+            {
+                originText: 'Walk through this park',
+                translate: '穿过这个公园'
+            },
+            {
+                originText: 'Walk through this process step by step',
+                translate: '一步步讲解这个步骤'
+            },
+            {
+                originText: 'We are through',
+                translate: '我们结束了'
+            },
+            {
+                originText: 'Are you through your dinner',
+                translate: '你吃完你的晚餐了吗'
+            },
+            {
+                originText: 'Fill this paper, and we are through',
+                translate: '填完这个文件，我们就算结束了'
+            },
+        ]
     }
 ]
 export const sixthLesson: ILessonInfo = {
