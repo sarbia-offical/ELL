@@ -422,7 +422,7 @@ export const wordList: Array<IWordInfo> = [
 export const sixthLesson: ILessonInfo = {
     title: 'Lesson sixth[u][u:]',
     swaggy: {
-        originText: '',
+        originText: 'I’m a Janet, and I’m a sophomore, I am currently traveling. I’ve already had both a wallet and cell phone stolen, and it’s only third day. Are you ready a college student asking for help? OK, let me test you',
         points: []
     },
     wordList: [wordList]
